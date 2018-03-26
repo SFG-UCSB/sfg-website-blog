@@ -85,6 +85,7 @@ div.section {
   margin-bottom: 40px;
 }
 .no-mb {
+  margin-top:0 !important;
   margin-bottom: 0 !important;
 }
 .mb-small {
@@ -805,9 +806,9 @@ fieldset[disabled] .btn-template-primary.active {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #38a7bb;
-  opacity: 0.9;
-  filter: alpha(opacity=90);
+  background: #1d5660;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
 }
 .jumbotron h1,
 .jumbotron h2,
@@ -1155,9 +1156,9 @@ fieldset[disabled] .btn-template-primary.active {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #38a7bb;
-  opacity: 0.9;
-  filter: alpha(opacity=90);
+  background: #000000;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
 }
 .home-carousel .owl-carousel {
   padding-top: 60px;
@@ -1261,6 +1262,7 @@ fieldset[disabled] .btn-template-primary.active {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  border-style: solid;
 }
 .testimonials .item .testimonial {
   position: relative;
@@ -1752,7 +1754,7 @@ fieldset[disabled] .btn-template-primary.active {
 .bar {
   position: relative;
   background: #38a7bb;
-  padding: 60px 0;
+  padding: 60px 0px;
 }
 .bar.background-pentagon {
   background: url('../img/texture-bw.png') center center repeat;
@@ -1795,7 +1797,7 @@ fieldset[disabled] .btn-template-primary.active {
   padding-right: 30px;
 }
 .bar.margin-vertical {
-  margin-top: 20px;
+  margin-top: 0px;
   margin-bottom: 20px;
 }
 .bar .dark-mask {

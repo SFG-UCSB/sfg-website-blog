@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Theme on Universal</title>
+    <title>Theme on Sustainable Fisheries Group</title>
     <link>/tags/theme/</link>
-    <description>Recent content in Theme on Universal</description>
+    <description>Recent content in Theme on Sustainable Fisheries Group</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Oct 2015 21:49:20 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 24 Feb 2018 13:50:46 +0200</lastBuildDate>
     
 	<atom:link href="/tags/theme/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Staff Resources</title>
+      <link>/blog/2018/02/24/staff_resources/</link>
+      <pubDate>Sat, 24 Feb 2018 13:50:46 +0200</pubDate>
+      
+      <guid>/blog/2018/02/24/staff_resources/</guid>
+      <description>Introduction R/RStudio Installation Packages  Github Installation  Gmail &amp;amp; Google Calendar Box Slack   Introduction Here at SFG we use numerous programs and platforms to organize, collaborate, and conduct our research. While we recognize that everyone has a workflow that works for them, we want to make sure everyone is familiar with the tools we use and how to get the most out of them in your own workflows and project management.</description>
+    </item>
     
     <item>
       <title>Linked post</title>
