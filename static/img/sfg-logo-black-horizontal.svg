@@ -3,7 +3,7 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="525" height="50" viewBox="0, 0, 525, 50">
   <g id="Layer_1">
     <text transform="matrix(1, 0, 0, 1, 305.733, 55)">
-      <tspan x="-245.767" y="-28" font-family="Charter-Roman" font-size="28" kerning="1" fill="#000000">SUSTAINABLE FISHERIES GROUP</tspan>
+      <tspan x="-245.767" y="-28" font-family="Charter-Roman" font-size="28" kerning="0" fill="#000000">SUSTAINABLE FISHERIES GROUP</tspan>
     </text>
     <path d="M5.195,3.964 C5.195,3.964 5.594,2.962 14.561,2.761 C23.529,2.561 28.909,3.563 28.909,3.563 C28.909,3.563 34.29,4.164 40.667,4.365 C47.044,4.565 51.428,3.964 51.428,3.964 C51.428,3.964 52.225,7.171 52.225,14.187 C52.225,21.203 51.627,26.215 51.627,26.215 C51.627,26.215 51.029,30.825 51.029,37.641 C51.029,44.457 51.428,47.263 51.428,47.263 C51.428,47.263 44.254,48.265 40.866,48.265 C37.478,48.265 28.511,47.464 28.511,47.464 C28.511,47.464 22.134,46.662 16.155,46.662 C10.177,46.662 4.996,47.464 4.996,47.464 C4.996,47.464 4.597,40.648 4.597,34.835 C4.597,29.021 4.996,26.014 5.394,23.008 C5.793,20.001 5.594,16.793 5.594,12.183 C5.594,7.572 5.195,3.964 5.195,3.964 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
     <g>
@@ -101,15 +101,15 @@
       <path d="M27.586,34.576 L27.294,33.217" fill-opacity="0" stroke="#000000" stroke-width="0.25"/>
     </g>
     <text transform="matrix(1, 0, 0, 1, 200.1, 50.048)">
-      <tspan x="-140.133" y="-8" font-family="LucidaGrande-Bold" font-size="10" kerning="1" fill="#000000">UNIVERSITY</tspan>
-      <tspan x="-69.084" y="-8" font-family="ArialHebrewScholar-Bold" font-size="10" kerning="1" fill="#000000"> </tspan>
-      <tspan x="-65.304" y="-8" font-family="LucidaGrande-Bold" font-size="10" kerning="1" fill="#000000">OF</tspan>
-      <tspan x="-49.329" y="-8" font-family="ArialHebrewScholar-Bold" font-size="10" kerning="1" fill="#000000"> </tspan>
-      <tspan x="-45.549" y="-8" font-family="LucidaGrande-Bold" font-size="10" kerning="1" fill="#000000">CALIFORNIA</tspan>
-      <tspan x="27.308" y="-8" font-family="ArialHebrewScholar-Bold" font-size="10" kerning="1" fill="#000000"> </tspan>
-      <tspan x="31.088" y="-8" font-family="LucidaGrande-Bold" font-size="10" kerning="1" fill="#000000">SANTA</tspan>
-      <tspan x="71.112" y="-8" font-family="ArialHebrewScholar-Bold" font-size="10" kerning="1" fill="#000000"> </tspan>
-      <tspan x="74.892" y="-8" font-family="LucidaGrande-Bold" font-size="10" kerning="1" fill="#000000">BARBARA</tspan>
+      <tspan x="-140.133" y="-8" font-family="LucidaGrande-Bold" font-size="10" kerning="0" fill="#000000">UNIVERSITY</tspan>
+      <tspan x="-79.084" y="-8" font-family="ArialHebrewScholar-Bold" font-size="10" kerning="0" fill="#000000"> </tspan>
+      <tspan x="-76.304" y="-8" font-family="LucidaGrande-Bold" font-size="10" kerning="0" fill="#000000">OF</tspan>
+      <tspan x="-62.329" y="-8" font-family="ArialHebrewScholar-Bold" font-size="10" kerning="0" fill="#000000"> </tspan>
+      <tspan x="-59.549" y="-8" font-family="LucidaGrande-Bold" font-size="10" kerning="0" fill="#000000">CALIFORNIA</tspan>
+      <tspan x="3.308" y="-8" font-family="ArialHebrewScholar-Bold" font-size="10" kerning="0" fill="#000000"> </tspan>
+      <tspan x="6.088" y="-8" font-family="LucidaGrande-Bold" font-size="10" kerning="0" fill="#000000">SANTA</tspan>
+      <tspan x="41.112" y="-8" font-family="ArialHebrewScholar-Bold" font-size="10" kerning="0" fill="#000000"> </tspan>
+      <tspan x="43.892" y="-8" font-family="LucidaGrande-Bold" font-size="10" kerning="0" fill="#000000">BARBARA</tspan>
     </text>
   </g>
 </svg>

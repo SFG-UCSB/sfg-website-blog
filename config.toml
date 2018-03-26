@@ -128,9 +128,7 @@ paginate = 10
 [params.topbar]
     enable = true
     text = """<p class="hidden-sm hidden-xs">Visit our main website at <a href="http://sfg.msi.ucsb.edu/">http://sfg.msi.ucsb.edu/</a> or you can find us on Github, Twitter, and Instagram! </p>
-      <p class="hidden-md hidden-lg"><a href="http://sfg.msi.ucsb.edu/" data-animate-hover="pulse"><i class="fa fa-chrome"></i></a>
-      </p>
-      """
+      <p class="hidden-md hidden-lg"></p>"""
 
 # Enable and disable widgets for the right sidebar
 [params.widgets]
