@@ -4,11 +4,11 @@
 <div id="top">
   <div class="container">
     <div class="row">
-      <div class="col-xs-11" align="right">
+      <div class="col-xs-10" align="right">
       {{ .Site.Params.topbar.text | safeHTML }}
       </div>
-      <div class="col-xs-1" align="left">
-        <div class="social">
+      <div class="col-xs-2" align="left">
+        <div class="social" align="left">
           {{ range .Site.Menus.topbar.ByWeight }}
           <a href="{{ .URL }}" target="_blank" style="opacity: 1;">{{ .Pre }}</a>
           {{ end }}
