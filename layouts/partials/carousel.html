@@ -12,12 +12,16 @@
                 <div class="item">
                     <div class="row">
                         <div class="col-sm-5 right">
-                            <h3>{{ .title }}</h3>
-                            {{ .description | safeHTML }}
+                            <h1>{{ .title }}</h1>
                         </div>
                         <div class="col-sm-7">
                             <img class="img-responsive" src="{{ .image }}" alt="">
                         </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        {{ .description | safeHTML }}
+                      </div>
                     </div>
                 </div>
                 {{ end }}
