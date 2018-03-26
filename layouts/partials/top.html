@@ -3,10 +3,12 @@
 {{ if .Site.Params.topbar.enable }}
 <div id="top">
   <div class="container">
-    <div class="row" align="right">
-      <div class="col-xs-12">
+    <div class="row">
+      <div class="col-xs-10" float="right">
+      {{ .Site.Params.topbar.text | safeHTML }}
+      </div>
+      <div class="col-xs-2" float="left">
         <div class="social">
-          {{ .Site.Params.topbar.text | safeHTML }}
           {{ range .Site.Menus.topbar.ByWeight }}
           <a href="{{ .URL }}" target="_blank" style="opacity: 1;">{{ .Pre }}</a>
           {{ end }}
