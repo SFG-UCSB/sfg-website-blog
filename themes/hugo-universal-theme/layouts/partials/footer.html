@@ -7,7 +7,7 @@ _________________________________________________________ -->
         <div class="col-md-12">
           <div class="row">
             
-            <div class="col-md-6">
+            <div class="col-md-7">
             {{ if isset .Site.Params "footer_text" }}
             <p class="pull-left">{{ .Site.Params.footer_text | safeHTML }}</p>
             {{ end }}
@@ -18,7 +18,7 @@ _________________________________________________________ -->
             </p>
             </div>
             
-            <div class="col-md-6">
+            <div class="col-md-5">
               {{ if isset .Site.Params "copyright" }}
               <p class="pull-right">{{ .Site.Params.copyright | safeHTML }}</p>
               {{ end }}
