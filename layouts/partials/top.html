@@ -5,18 +5,15 @@
   <div class="container">
     <div class="col-xs-12">
     <div class="row">
-      <div class="col-xs-8" align="left">
+      <div class="col-xs-10">
       {{ .Site.Params.topbar.text | safeHTML }}
       </div>
-      <div class="col-xs-2" align="left">
+      <div class="col-xs-2 right">
         <div class="social">
           {{ range .Site.Menus.topbar.ByWeight }}
           <a href="{{ .URL }}" target="_blank" style="opacity: 1;">{{ .Pre }}</a>
           {{ end }}
         </div>
-      </div>
-      <div class="col-xs-2" align="left">
-      <a href="/contact" class="btn btn-small btn-template-main">{{ i18n "contactGoTo" }}</a>
       </div>
     </div>
     </div>
