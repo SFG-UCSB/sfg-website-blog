@@ -1,5 +1,21 @@
 /* your styles go here */
 
+div.section {
+  margin-bottom: 40px;
+}
+.no-mb {
+  margin-bottom: 0 !important;
+}
+.mb-small {
+  margin-bottom: 20px !important;
+}
+.heading {
+  margin-bottom: 40px;
+}
+.no-mt {
+  margin-top: 0 !important;
+}
+
 .box-image-text .image {
   min-height: 200px;
   max-height: 200px;
