@@ -34,24 +34,5 @@
 {{ end }}
 {{ end }}
 {{ end }}   
-    
-{{ if isset .Site.Params "see_more" }}
-{{ if .Site.Params.see_more.enable }}
-{{ if gt (len .Site.Data.see_more) 0 }}
-<section class="bar background-image-fixed-2 no-mb color-white text-center">
-    <div class="dark-mask"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <p class="lead">{{ .description | safeHTML }}</p>
-                <p class="text-center">
-                    <a href="{{ .Site.Params.see_more.link_url }}" class="btn btn-template-transparent-black btn-lg">{{ .Site.Params.see_more.link_text }}</a>
-                </p>
-            </div>
 
-        </div>
-    </div>
-</section>
-{{ end }}
-{{ end }}
 
