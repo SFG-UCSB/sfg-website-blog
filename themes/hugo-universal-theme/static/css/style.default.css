@@ -1795,7 +1795,7 @@ fieldset[disabled] .btn-template-primary.active {
   padding-right: 30px;
 }
 .bar.margin-vertical {
-  margin-top: 20px;
+  margin-top: 0px;
   margin-bottom: 20px;
 }
 .bar .dark-mask {
