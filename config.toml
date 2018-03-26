@@ -1,7 +1,8 @@
-###-----------------------------------------
-### General site settings
-###-----------------------------------------
+### Configuration file for the SFG GitHub page (hosted by Netlify).
+### Built using the Hugo Universal Theme by Bootstrapious, adapted for Hugo by DevCows, and modified by kmillage
+### Last updated on March 26, 2018
 
+### General settings -------------------------------------
 baseurl = "/" # Later will try to link this to the sfg-ucsb.github.io page
 title = "Sustainable Fisheries Group"
 theme = "hugo-universal-theme"
@@ -10,24 +11,12 @@ languageCode = "en-us"
 defaultContentLanguage = "en" # Site language. Available translations in the theme's `/i18n` directory.
 disqusShortname = "" # Enable comments by entering your Disqus shortname
 googleAnalytics = "" # Enable Google Analytics by entering your tracking code
+paginate = 10 # Define the number of posts per page
 
-# Define the number of posts per page
-paginate = 10
-
-###-----------------------------------------
-### Top bar on the main page
-###-----------------------------------------
-
-
-
-###-----------------------------------------
-### Menu settings
-###-----------------------------------------
-
+### Menu settings -----------------------------------------
 [menu]
 
 # Main menu
-
 [[menu.main]]
     name = "Home"
     url  = "/"
@@ -49,7 +38,7 @@ paginate = 10
     url  = "/contact/"
     weight = 4
 
-### Contact logo items for the bottom footer ###
+# Footer contact icons (ignore that it says topbar... changed this from original template)
 [[menu.topbar]]
     weight = 1
     name = "GitHub"
@@ -74,11 +63,63 @@ paginate = 10
     url = "mailto:kmillage@ucsb.edu"
     pre = "<i class='fa fa-2x fa-envelope'></i>"
 
+### Parameters -----------------------------------------
 [params]
+
+# Carousel - Main header box on first page
+# All carousel items are defined in their own files stored in '/data/carousel/'
+[params.carousel]
+    enable = true    
+
+# Recent Posts - Box with set number of recent posts
+# All posts are defined in their own files stored in '/content/blog/'
+[params.recent_posts]
+    enable = true
+    title = "Recent posts from our blog"
+    subtitle = "We like to write about code, random interests, etc..."
+    
+# See More - Send people to the main SFG web page
+[params.see_more]
+    enable = true
+    icon = "fa fa-file-code-o"
+    title = "Do you want to see more?"
+    subtitle = "We have prepared for you more than 40 different HTML pages, including 5 variations of homepage."
+    link_url = "#"
+    link_text = "Check other homepages"
+    
+# Features - Box with different icons and short descriptions
+# All features are defined in their own files stored in '/data/features/'
+[params.features]
+    enable = true
+    
+# Testimonials - Box with quotes, names, and pictures of various people... Might put staff here
+# All testimonials are defined in their own files stored in '/data/testimonials/'
+[params.testimonials]
+    enable = true
+    title = "Our team"
+    subtitle = "More information"
+
+# Enable and disable widgets for the right sidebar
+[params.widgets]
+    categories = true
+    tags = true
+    search = true
+
+# Clients - Box with logos that link to external sites. Probably not using this section
+# All clients are defined in their own files stored in '/data/clients/'
+[params.clients]
+    enable = false
+    title = ""
+    subtitle = ""
     viewMorePostLink = "/blog/"
     author = "DevCows"
     defaultKeywords = ["devows", "hugo", "go"]
     defaultDescription = "Site template made by devcows using hugo"
+
+
+### Other parameters ###
+
+    date_format = "January 2, 2006" # Format dates with Go's time formatting
 
     # Google Maps API key (if not set will default to not passing a key.)
     googleMapsApiKey = "AIzaSyCFhtWLJcE30xOAjcbSFi-0fnoVmQZPb1Y"
@@ -86,31 +127,25 @@ paginate = 10
     # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
     style = "default"
 
-### Footer parameters ###
-copyright = "Copyright (c) 2018, Sustainable Fisheries Group; all rights reserved."
+    # Footer
+    copyright = "Copyright (c) 2018, Sustainable Fisheries Group; all rights reserved."
 
-footer_text = """<p class="hidden-sm hidden-xs">Visit our main website at <a href="http://sfg.msi.ucsb.edu/">http://sfg.msi.ucsb.edu/</a> or you can find us on Github, Twitter, and Instagram! </p>
+    footer_text = """<p class="hidden-sm hidden-xs">Visit our main website at <a href="http://sfg.msi.ucsb.edu/">http://sfg.msi.ucsb.edu/</a> or you can find us on Github, Twitter, and Instagram! </p>
       <p class="hidden-md hidden-lg"></p>"""
       
-    # Since this template is static, the contact form uses www.formspree.io as a
-    # proxy. The form makes a POST request to their servers to send the actual
-    # email. Visitors can send up to a 1000 emails each month for free.
-    #
-    # What you need to do for the setup?
-    #
-    # - set your email address under 'email' below
-    # - upload the generated site to your server
-    # - send a dummy email yourself to confirm your account
-    # - click the confirm link in the email from www.formspree.io
-    # - you're done. Happy mailing!
-    #
-    # Enable the contact form by entering your Formspree.io email
-    email = "your@email.com"
+### Contact page ###      
+# Since this template is static, the contact form uses www.formspree.io as a proxy. 
+#The form makes a POST request to their servers to send the actual email. 
+#Visitors can send up to a 1000 emails each month for free.
+  
+# What you need to do for the setup?
+# - set your email address under 'email' below
+# - upload the generated site to your server
+# - send a dummy email yourself to confirm your account
+# - click the confirm link in the email from www.formspree.io
 
-    
-      
-    # Format dates with Go's time formatting
-    date_format = "January 2, 2006"
+# Enable the contact form by entering your Formspree.io email
+    email = "your@email.com"
 
     logo = "img/logo.png"
     address = """<p><strong>Universal Ltd.</strong>
@@ -128,59 +163,3 @@ footer_text = """<p class="hidden-sm hidden-xs">Visit our main website at <a hre
 [Permalinks]
     blog = "/blog/:year/:month/:day/:filename/"
 
-# Enable or disable top bar with social icons
-#[params.topbar]
-    #enable = true
-    #text = """<p class="hidden-sm hidden-xs">Visit our main website at <a href="http://sfg.msi.ucsb.edu/">http://sfg.msi.ucsb.edu/</a> or you can find us on Github, Twitter, and Instagram! </p>
-      #<p class="hidden-md hidden-lg"></p>"""
-
-# Enable and disable widgets for the right sidebar
-[params.widgets]
-    categories = true
-    tags = true
-    search = true
-
-### Carousel - Main header box on first page
-[params.carousel]
-    enable = true
-    # All carousel items are defined in their own files. You can find example items
-    # at 'exampleSite/data/carousel'.
-    # For more informtion take a look at the README.
-    
-### See More - Further description of SFG
-[params.see_more]
-    enable = true
-    icon = "fa fa-file-code-o"
-    title = "Do you want to see more?"
-    subtitle = "We have prepared for you more than 40 different HTML pages, including 5 variations of homepage."
-    link_url = "#"
-    link_text = "Check other homepages"
-
-[params.features]
-    enable = true
-    # All features are defined in their own files. You can find example items
-    # at 'exampleSite/data/features'.
-    # For more informtion take a look at the README.
-
-[params.testimonials]
-    enable = true
-    # All testimonials are defined in their own files. You can find example items
-    # at 'exampleSite/data/testimonials'.
-    # For more informtion take a look at the README.
-    title = "Testimonials"
-    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
-
-
-
-[params.clients]
-    enable = true
-    # All clients are defined in their own files. You can find example items
-    # at 'exampleSite/data/clients'.
-    # For more informtion take a look at the README.
-    title = "Our Clients"
-    subtitle = ""
-
-[params.recent_posts]
-    enable = true
-    title = "From our blog"
-    subtitle = "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo."
