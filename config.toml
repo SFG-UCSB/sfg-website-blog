@@ -146,7 +146,11 @@ paginate = 10
 ### See More - Further description of SFG
 [params.see_more]
     enable = true
-    # See more is now defined in its own file. Kat changed this from the original template. 
+    icon = "fa fa-file-code-o"
+    title = "Do you want to see more?"
+    subtitle = "We have prepared for you more than 40 different HTML pages, including 5 variations of homepage."
+    link_url = "#"
+    link_text = "Check other homepages"
 
 [params.features]
     enable = true
