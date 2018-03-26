@@ -121,7 +121,7 @@ paginate = 10
 # Enable or disable top bar with social icons
 [params.topbar]
     enable = true
-    text = """<p class="hidden-sm hidden-xs">Visit our main website at http://sfg.msi.ucsb.edu/!</p>
+    text = """<p class="hidden-sm hidden-xs">Our organization's main website lives at http://sfg.msi.ucsb.edu/ or you can find us on Github, Twitter, and Instagram! </p>
       <p class="hidden-md hidden-lg"><a href="#" data-animate-hover="pulse"><i class="fa fa-chrome"></i></a>
       </p>
       """
