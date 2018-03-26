@@ -137,7 +137,7 @@ paginate = 10 # Define the number of posts per page
 # Features - Box with different icons and short descriptions
 # All features are defined in their own files stored in '/data/features/'
 [params.features]
-    enable = true
+    enable = false
     
 # Testimonials - Box with quotes, names, and pictures of various people... Might put staff here
 # All testimonials are defined in their own files stored in '/data/testimonials/'
