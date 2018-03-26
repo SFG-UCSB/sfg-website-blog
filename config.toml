@@ -15,6 +15,12 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking code
 paginate = 10
 
 ###-----------------------------------------
+### Top bar on the main page
+###-----------------------------------------
+
+
+
+###-----------------------------------------
 ### Menu settings
 ###-----------------------------------------
 
