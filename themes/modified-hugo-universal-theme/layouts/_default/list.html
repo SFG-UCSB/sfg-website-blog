@@ -42,7 +42,9 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           {{ if isset .Params "authors" }}
-                                          {{ i18n "authorBy" }} <a href="#">{{ .Params.authors }}</a>
+                                          {{ if gt (len .Params.authors) 0 }}
+                                          By <a href="{{ $.Site.BaseURL }}authors/{{ index .Params.authors 0 | urlize | lower }}">{{ index .Params.authors 0 }}</a>
+                                          {{ end }}
                                           {{ end }}
                                           {{ if isset .Params "categories" }}
                                           {{ if gt (len .Params.categories) 0 }}
