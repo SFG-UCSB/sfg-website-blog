@@ -38,7 +38,7 @@
   translation: "Toggle Navigation"
 
 - id: categoriesTitle
-  translation: "Categories"
+  translation: "Authors"
 
 - id: searchTitle
   translation: "Search"

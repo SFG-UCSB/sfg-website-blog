@@ -69,3 +69,6 @@
 
 - id: publishedOn
   translation: "el"
+  
+- id: authorsTitle
+  translation: "Authors"

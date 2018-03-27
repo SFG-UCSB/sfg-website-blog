@@ -69,3 +69,6 @@
 
 - id: publishedOn
   translation: "在"
+  
+- id: authorsTitle
+  translation: "Authors"

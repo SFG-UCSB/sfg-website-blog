@@ -69,3 +69,6 @@
 
 - id: publishedOn
   translation: "på"
+  
+- id: authorsTitle
+  translation: "Authors"

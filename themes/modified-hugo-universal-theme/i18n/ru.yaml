@@ -69,3 +69,6 @@
 
 - id: publishedOn
   translation: "на"
+  
+- id: authorsTitle
+  translation: "Authors"
