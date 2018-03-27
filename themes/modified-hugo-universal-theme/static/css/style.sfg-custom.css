@@ -3558,7 +3558,7 @@ a.list-group-item.active > .badge,
   right: 15px;
 }
 
-hr.homepage {
+.homepage-line {
     border-width: 5px;
     border-color: #38a7bb;
 }
