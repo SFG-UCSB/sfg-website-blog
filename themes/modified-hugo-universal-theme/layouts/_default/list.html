@@ -44,8 +44,9 @@
                                           {{ if isset .Params "authors" }}
                                           {{ if gt (len .Params.authors) 0 }}
                                           By
-                                          {{ range $name, $items := .Params.authors }}
-                                          <a href="{{ $.Site.BaseURL }}authors/{{ $name | urlize | lower }}">{{ $name }} ({{ len $items }})</a> & 
+                                          {{ range .Params.authors }}
+                                          <a href="{{ $.Site.BaseURL }}authors/{{ .Params.authors | urlize | lower }}">{{ .Params.authors }} ({{ len .Params.authors }})</a> 
+                                          & 
                                           {{ end }}
                                           {{ end }}
                                           {{ end }}
