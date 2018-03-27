@@ -7,7 +7,3 @@ banner = "img/banners/banner-4.jpg"
 authors = ["Tyler Clavelle"]
 menu = "https://tclavelle.github.io/blog/blogdown_github/"
 +++
-
-I'm a linked post in the menu. You can add other posts by adding the following line to the frontmatter:
-
-    menu = "main"
