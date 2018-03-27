@@ -42,8 +42,8 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           {{ if isset .Params "authors" }}
-                                          {{ if gt (len .Params.authors) 0 }}
-                                          By <a href="{{ $.Site.BaseURL }}authors/{{ index .Params.authors | urlize | lower }}">{{ index .Params.authors }}</a>
+                                          {{ if not (eq (len .Params.authors) 0) }}
+                                          By <a href="{{ $.Site.BaseURL }}authors/{{ index .Params.authors 0 | urlize | lower }}">{{ .Params.authors }}</a>
                                           {{ end }}
                                           {{ end }}
                                           {{ if isset .Params "categories" }}
