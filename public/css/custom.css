@@ -17,3 +17,7 @@
 .box-simple {
   min-height: 230px;
 }
+
+.author_sep + .author_sep:before {
+    content: ", "
+}
