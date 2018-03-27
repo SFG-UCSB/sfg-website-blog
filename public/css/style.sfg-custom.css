@@ -3558,13 +3558,7 @@ a.list-group-item.active > .badge,
   right: 15px;
 }
 
-hr { 
-    display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 3px;
+hr.homepage {
+    border-width: 5px;
     border-color: #38a7bb;
 }
