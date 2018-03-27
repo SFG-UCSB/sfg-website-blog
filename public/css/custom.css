@@ -18,6 +18,7 @@
   min-height: 230px;
 }
 
+/* Little helper class that puts an "&" between multiple author tags */
 .author_sep + .author_sep:before {
-    content: ", "
+    content: " & "
 }

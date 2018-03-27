@@ -40,9 +40,9 @@
                             <p class="author-category">
                               {{ with .Params.authors }}
                               By
-                                {{range .}}
-                                    <a href="{{ $.Site.BaseURL }}authors/{{ . | urlize | lower }}">{{ . }}</a> &
-                                {{end}} 
+                                {{ range sort .Params.authors }}
+                                          <a class="author_sep" href="{{ $.Site.BaseURL }}authors/{{ . | urlize | lower }}">{{ . }}</a>
+                                {{ end }}
                             {{ end }}
                             {{ i18n "publishedOn" }} {{ .Date.Format .Site.Params.date_format }}
                             </p>
