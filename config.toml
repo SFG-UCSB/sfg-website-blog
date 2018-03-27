@@ -107,6 +107,11 @@ paginate = 10 # Define the number of posts per page
       """
     latitude = "-12.043333"
     longitude = "-77.028333"
+    
+    viewMorePostLink = "/blog/"
+    author = ""
+    defaultKeywords = ["devows", "hugo", "go"]
+    defaultDescription = "Site template made by devcows using hugo"
 
 [Permalinks]
     blog = "/blog/:year/:month/:day/:filename/"
@@ -152,10 +157,6 @@ paginate = 10 # Define the number of posts per page
     enable = false
     title = ""
     subtitle = ""
-    viewMorePostLink = "/blog/"
-    author = "DevCows"
-    defaultKeywords = ["devows", "hugo", "go"]
-    defaultDescription = "Site template made by devcows using hugo"
 
 # Enable and disable widgets for the right sidebar
 [params.widgets]
