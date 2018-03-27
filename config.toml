@@ -160,10 +160,11 @@ paginate = 10 # Define the number of posts per page
 
 # Enable and disable widgets for the right sidebar
 [params.widgets]
-    categories = true
+    authors = true
+    categories = false
     tags = true
     search = true
-    authors = true
+
 
 
 
