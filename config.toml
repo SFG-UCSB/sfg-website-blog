@@ -146,12 +146,6 @@ paginate = 10 # Define the number of posts per page
     title = "Our team"
     subtitle = "More information"
 
-# Enable and disable widgets for the right sidebar
-[params.widgets]
-    categories = true
-    tags = true
-    search = true
-
 # Clients - Box with logos that link to external sites. Probably not using this section
 # All clients are defined in their own files stored in '/data/clients/'
 [params.clients]
@@ -163,6 +157,12 @@ paginate = 10 # Define the number of posts per page
     defaultKeywords = ["devows", "hugo", "go"]
     defaultDescription = "Site template made by devcows using hugo"
 
+# Enable and disable widgets for the right sidebar
+[params.widgets]
+    categories = true
+    tags = true
+    search = true
+    authors = true
 
 
 
