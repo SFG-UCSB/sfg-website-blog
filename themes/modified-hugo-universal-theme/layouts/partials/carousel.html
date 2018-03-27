@@ -1,22 +1,22 @@
+<!-- This partial overwrites the default "carousel" widget in the Hugo Universal Theme -->
+<!-- I removed the picture and instead put the description text in its place. Also changed heading size -->
+
 {{ if isset .Site.Params "carousel" }}
 {{ if .Site.Params.carousel.enable }}
 {{ if gt (len .Site.Data.carousel) 0 }}
-<section>
+<section class="no-mb">
     <div class="home-carousel">
         <div class="dark-mask"></div>
         <div class="container">
             <div class="homepage owl-carousel">
                 {{ range sort .Site.Data.carousel "weight" }}
                 <div class="item">
-                    <div class="row">
-                        <div class="col-sm-5 right">
+                        <div class="col-sm-12 center">
                             <h1>{{ .title }}</h1>
+                        </div>
+                        <div class="col-sm-12 center">
                             {{ .description | safeHTML }}
                         </div>
-                        <div class="col-sm-7">
-                            <img class="img-responsive" src="{{ .image }}" alt="">
-                        </div>
-                    </div>
                 </div>
                 {{ end }}
             </div>
@@ -26,4 +26,4 @@
 </section>
 {{ end }}
 {{ end }}
-{{ end }}
+{{ end }}   

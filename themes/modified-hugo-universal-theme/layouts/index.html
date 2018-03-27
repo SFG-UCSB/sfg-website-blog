@@ -1,3 +1,5 @@
+<!-- Overwriting the default home page settings to change order of widgets -->
+
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
 
@@ -9,24 +11,22 @@
 
         <header>
 
-          {{ partial "top.html" . }}
-
           {{ partial "nav.html" . }}
 
         </header>
-
+        
         {{ partial "carousel.html" . }}
-
+        
+        {{ partial "recent_posts.html" . }}
+        
+        {{ partial "see_more.html" . }}
+        
         {{ partial "features.html" . }}
 
         {{ partial "testimonials.html" . }}
 
-        {{ partial "see_more.html" . }}
-
-        {{ partial "recent_posts.html" . }}
-
         {{ partial "clients.html" . }}
-
+        
         {{ partial "footer.html" . }}
 
     </div>
