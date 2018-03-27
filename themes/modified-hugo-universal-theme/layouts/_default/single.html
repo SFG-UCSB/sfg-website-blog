@@ -24,7 +24,7 @@
 
                     <div class="col-md-9" id="blog-post">
 
-                        <p class="text-muted text-uppercase mb-small text-right">{{ if .Params.authors }} By <a href="{{ $.Site.BaseURL }}authors/{{ index .Params.authors 0 | urlize | lower }}">{{ index .Params.authors 0 }}</a> | {{ end }}{{ end }}{{ .Date.Format .Site.Params.date_format }}</p>
+                        <p class="text-muted text-uppercase mb-small text-right">{{ if .Params.authors }}{{ if gt (len .Params.authors) 0 }} By <a href="{{ $.Site.BaseURL }}authors/{{ index .Params.authors 0 | urlize | lower }}">{{ index .Params.authors 0 }}</a> | {{ end }}{{ end }}{{ .Date.Format .Site.Params.date_format }}</p>
 
                         <div id="post-content">
                           {{ .Content }}
