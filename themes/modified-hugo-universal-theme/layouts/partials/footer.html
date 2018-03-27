@@ -1,0 +1,36 @@
+<!-- This partial overwrites the default "footer" in the Hugo Universal Theme -->
+<!-- I made fairly major changes to the footer. Footer now includes what was previous the "top bar" and I have gotten rid of lots of repetitive things like the address and another "about us" section -->
+
+<div id="copyright">
+    <div class="container">
+        <div class="col-md-12">
+          <div class="row">
+            
+            <div class="col-md-7">
+            {{ if isset .Site.Params "footer_text" }}
+            <p class="pull-left">{{ .Site.Params.footer_text | safeHTML }}</p>
+            {{ end }}
+            <p class="pull-left">
+              {{ range .Site.Menus.topbar.ByWeight }}
+              <a href="{{ .URL }}" target="_blank" style="opacity: 1;">{{ .Pre }}</a>
+              {{ end }}
+            </p>
+            </div>
+            
+            <div class="col-md-5">
+              {{ if isset .Site.Params "copyright" }}
+              <p class="pull-right">{{ .Site.Params.copyright | safeHTML }}</p>
+              {{ end }}
+              <p class="pull-right">
+                {{ i18n "templateBy" }} <a href="http://bootstrapious.com/free-templates">Bootstrapious</a>.
+                {{ i18n "portedBy" }} <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>
+              </p>
+            </div>
+            
+          </div>
+        </div>
+    </div>
+</div>
+<!-- /#copyright -->
+
+<!-- *** COPYRIGHT END *** -->

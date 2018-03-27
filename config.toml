@@ -5,7 +5,7 @@
 ### General settings -------------------------------------
 baseurl = "/" # Later will try to link this to the sfg-ucsb.github.io page
 title = "Sustainable Fisheries Group"
-theme = "hugo-universal-theme"
+theme = "modified-hugo-universal-theme"
 themesDir = "./themes"
 languageCode = "en-us" 
 defaultContentLanguage = "en" # Site language. Available translations in the theme's `/i18n` directory.
