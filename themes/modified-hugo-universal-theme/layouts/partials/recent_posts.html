@@ -38,11 +38,13 @@
                         <div class="content">
                             <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
                             <p class="author-category">
-                              {{ with .Params.authors }}
+                              {{ if isset .Params "authors" }}
+                              {{ if gt (len .Params.authors) 0 }}
                               By
                                 {{ range sort .Params.authors }}
                                           <a class="author_sep" href="{{ $.Site.BaseURL }}authors/{{ . | urlize | lower }}">{{ . }}</a>
                                 {{ end }}
+                            {{ end }}
                             {{ end }}
                             {{ i18n "publishedOn" }} {{ .Date.Format .Site.Params.date_format }}
                             </p>
