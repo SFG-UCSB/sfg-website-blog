@@ -148,7 +148,7 @@ paginate = 10 # Define the number of posts per page
 # All testimonials are defined in their own files stored in '/data/testimonials/'
 [params.testimonials]
     enable = true
-    title = "Our team"
+    title = "Contributing Authors"
     subtitle = "More information"
 
 # Clients - Box with logos that link to external sites. Probably not using this section
