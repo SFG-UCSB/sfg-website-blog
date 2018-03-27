@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blogs on Sustainable Fisheries Group</title>
-    <link>/blog/</link>
-    <description>Recent content in Blogs on Sustainable Fisheries Group</description>
+    <title>Sfg on Sustainable Fisheries Group</title>
+    <link>/tags/sfg/</link>
+    <description>Recent content in Sfg on Sustainable Fisheries Group</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 24 Feb 2018 13:50:46 +0200</lastBuildDate>
     
-	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/sfg/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       
       <guid>/blog/2018/02/24/staff_resources/</guid>
       <description>Introduction R/RStudio Installation Packages  Github Installation  Gmail &amp;amp; Google Calendar Box Slack   Introduction Here at SFG we use numerous programs and platforms to organize, collaborate, and conduct our research. While we recognize that everyone has a workflow that works for them, we want to make sure everyone is familiar with the tools we use and how to get the most out of them in your own workflows and project management.</description>
-    </item>
-    
-    <item>
-      <title>Building a blog with Blogdown and GitHub</title>
-      <link>/blog/2015/10/02/building-blog-blogdown-github/</link>
-      <pubDate>Fri, 02 Oct 2015 21:49:20 +0200</pubDate>
-      
-      <guid>/blog/2015/10/02/building-blog-blogdown-github/</guid>
-      <description>Does this put summary text on the main page and on the blog page?</description>
     </item>
     
   </channel>

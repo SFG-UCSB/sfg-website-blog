@@ -30,56 +30,47 @@
     </item>
     
     <item>
+      <title>Box</title>
+      <link>/tags/box/</link>
+      <pubDate>Sat, 24 Feb 2018 13:50:46 +0200</pubDate>
+      
+      <guid>/tags/box/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Github</title>
       <link>/tags/github/</link>
-      <pubDate>Fri, 02 Oct 2015 21:49:20 +0200</pubDate>
+      <pubDate>Sat, 24 Feb 2018 13:50:46 +0200</pubDate>
       
       <guid>/tags/github/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Go</title>
-      <link>/tags/go/</link>
-      <pubDate>Thu, 17 Sep 2015 13:47:08 +0200</pubDate>
-      
-      <guid>/tags/go/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>/tags/hugo/</link>
-      <pubDate>Mon, 03 Aug 2015 13:39:46 +0200</pubDate>
-      
-      <guid>/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ipsum</title>
-      <link>/tags/ipsum/</link>
-      <pubDate>Sat, 10 Oct 2015 13:07:31 +0200</pubDate>
-      
-      <guid>/tags/ipsum/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>R</title>
       <link>/tags/r/</link>
-      <pubDate>Fri, 02 Oct 2015 21:49:20 +0200</pubDate>
+      <pubDate>Sat, 24 Feb 2018 13:50:46 +0200</pubDate>
       
       <guid>/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Theme</title>
-      <link>/tags/theme/</link>
+      <title>Rstudio</title>
+      <link>/tags/rstudio/</link>
       <pubDate>Sat, 24 Feb 2018 13:50:46 +0200</pubDate>
       
-      <guid>/tags/theme/</guid>
+      <guid>/tags/rstudio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sfg</title>
+      <link>/tags/sfg/</link>
+      <pubDate>Sat, 24 Feb 2018 13:50:46 +0200</pubDate>
+      
+      <guid>/tags/sfg/</guid>
       <description></description>
     </item>
     
