@@ -1770,6 +1770,10 @@ fieldset[disabled] .btn-template-primary.active {
 .bar.background-white {
   background: #fff;
 }
+.bar.background-white2 {
+  background: #fff;
+  border-top: solid 5px #38a7bb;
+}
 .bar.background-image-fixed-1 {
   background: url('../img/fixed-background-1.jpg') center top no-repeat;
   background-attachment: fixed;
