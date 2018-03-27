@@ -44,10 +44,11 @@
                                           {{ if isset .Params "authors" }}
                                           {{ if gt (len .Params.authors) 0 }}
                                           {{ with .Params.authors }}
-                                            By
-                                            {{range .}}
-                                              <a href="{{ $.Site.BaseURL }}authors/{{ . | urlize | lower }}">{{ . }}</a>
-                                            {{end}} 
+                                          By 
+                                          {{ $sort := sort . }}
+                                          {{ $links := apply $sort "partial" "{{ $.Site.BaseURL }}authors/" "." }}
+                                          {{ $clean := apply $links "chomp" "." }}
+                                          {{ delimit $clean ", " }}
                                           {{ end }}
                                           {{ end }}
                                           {{ end }}
