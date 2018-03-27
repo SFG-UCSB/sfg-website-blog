@@ -44,7 +44,10 @@
                                           {{ if isset .Params "authors" }}
                                           {{ if gt (len .Params.authors) 0 }}
                                           {{ with .Params.authors }}
-                                          By <a href="#">{{ . }}</a> &
+                                            By
+                                            {{range .}}
+                                              <a href="{{ $.Site.BaseURL }}authors/{{ . | urlize | lower }}">{{ . }}</a>
+                                            {{end}} 
                                           {{ end }}
                                           {{ end }}
                                           {{ end }}
