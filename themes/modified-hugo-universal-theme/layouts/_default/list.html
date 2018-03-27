@@ -43,7 +43,7 @@
                                         <p class="author-category">
                                           {{ if isset .Params "authors" }}
                                           {{ if gt (len .Params.authors) 0 }}
-                                          By <a href="{{ $.Site.BaseURL }}authors/{{ index .Params.authors 0 | urlize | lower }}">{{ index .Params.authors }}</a>
+                                          By <a href="{{ $.Site.BaseURL }}authors/{{ index .Params.authors 0 | urlize | lower }}">{{ index .Params.authors 0}}</a>
                                           {{ end }}
                                           {{ end }}
                                           {{ if isset .Params "categories" }}
