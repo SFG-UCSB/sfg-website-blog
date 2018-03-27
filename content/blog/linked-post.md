@@ -7,3 +7,5 @@ banner = "img/banners/banner-4.jpg"
 authors = ["Tyler Clavelle"]
 menu = "https://tclavelle.github.io/blog/blogdown_github/"
 +++
+
+Does this put summary text on the main page and on the blog page? 
