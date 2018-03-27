@@ -45,7 +45,7 @@
                                           {{ if gt (len .Params.authors) 0 }}
                                           By
                                           {{ range .Params.authors }}
-                                          <a href="{{ $.Site.BaseURL }}authors/{{ .Params.authors | urlize | lower }}">{{ .Params.authors }} ({{ len .Params.authors }})</a> 
+                                          <a href="{{ $.Site.BaseURL }}authors/{{ index .Params.authors | urlize | lower }}">{{ index .Params.authors }} ({{ len .Params.authors }})</a> 
                                           & 
                                           {{ end }}
                                           {{ end }}
