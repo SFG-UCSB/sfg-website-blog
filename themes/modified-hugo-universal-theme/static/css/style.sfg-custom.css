@@ -88,6 +88,9 @@ div.section {
   margin-top:0 !important;
   margin-bottom: 0 !important;
 }
+.top-border-blue{
+  border-top: solid 5px #38a7bb;
+}
 .mb-small {
   margin-bottom: 20px !important;
 }
@@ -1753,8 +1756,8 @@ fieldset[disabled] .btn-template-primary.active {
 }
 .bar {
   position: relative;
-  background: #ffffff;
-  padding: 60px 0px;
+  background: #38a7bb;
+  padding: 60px 0;
 }
 .bar.background-pentagon {
   background: url('../img/texture-blue-polygon.jpg') center center repeat;
@@ -1768,10 +1771,6 @@ fieldset[disabled] .btn-template-primary.active {
   background: #555555;
 }
 .bar.background-white {
-  background: #ffffff;
-}
-.bar.background-blue {
-  border-bottom: solid 5px #38a7bb;
   background: #ffffff;
 }
 .bar.background-image-fixed-1 {
