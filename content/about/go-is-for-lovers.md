@@ -2,6 +2,7 @@
 title = "Go is for lovers"
 date = "2015-09-17T13:47:08+02:00"
 banner = "img/banners/banner-2.jpg"
+type = "about"
 +++
 
 Hugo uses the excellent [go][] [html/template][gohtmltemplate] library for
