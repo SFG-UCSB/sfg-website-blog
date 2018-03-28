@@ -28,17 +28,18 @@ paginate = 10 # Define the number of posts per page
     weight = 2
 
 [[menu.main]]
-    name = "Publications"
+    name = "Open Science"
     identifier = "publications"
     url  = "/publications/"
     weight = 3
-
+    
 [[menu.main]]
-    name = "Contact"
-    url  = "/contact/"
+    name = "About Us"
+    identifier = "authors"
+    url  = "/authors/"
     weight = 4
 
-# Footer contact icons (ignore that it says topbar... changed this from original template)
+# Footer contact icons (ignore that it says topbar... changed this from original template and changing the name will probably break everything)
 [[menu.topbar]]
     weight = 1
     name = "GitHub"
@@ -56,12 +57,6 @@ paginate = 10 # Define the number of posts per page
     name = "Instagram"
     url = "https://www.instagram.com/sfg_ucsb/"
     pre = "<i class='fa fa-2x fa-instagram'></i>"
-
-[[menu.topbar]]
-    weight = 4
-    name = "Email"
-    url = "mailto:kmillage@ucsb.edu"
-    pre = "<i class='fa fa-2x fa-envelope'></i>"
 
 ### Parameters -----------------------------------------
 [params]
@@ -134,7 +129,7 @@ paginate = 10 # Define the number of posts per page
 [params.see_more]
     enable = true
     title = "Do you want to learn more about us?"
-    subtitle = "We have more information on our team, projects, and places we work on our main organization website"
+    subtitle = "Find information on our team, projects, and places we work on our main website"
     link_url = "http://sfg.msi.ucsb.edu/"
     link_text = "Visit our main site"
     
