@@ -8,8 +8,8 @@ features = ["blog", "themes", "disqus", "minimal", "responsive"]
 min_version = 0.15
 
 [author]
-    name = "adrianmo"
-    homepage = "//github.com/adrianmo"
+    name = ""
+    homepage = ""
 
 # If Porting existing theme
 [original]
