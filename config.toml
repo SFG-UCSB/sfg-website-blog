@@ -133,11 +133,10 @@ paginate = 10 # Define the number of posts per page
 # See More - Send people to the main SFG web page
 [params.see_more]
     enable = true
-    icon = "fa fa-file-code-o"
-    title = "Do you want to see more?"
-    subtitle = "We have prepared for you more than 40 different HTML pages, including 5 variations of homepage."
-    link_url = "#"
-    link_text = "Check other homepages"
+    title = "Do you want to learn more about us?"
+    subtitle = "We have more information on our team, projects, and places we work on our main organization website"
+    link_url = "http://sfg.msi.ucsb.edu/"
+    link_text = "Visit our main site"
     
 # Features - Box with different icons and short descriptions
 # All features are defined in their own files stored in '/data/features/'
