@@ -24,6 +24,7 @@ paginate = 10 # Define the number of posts per page
 
 [[menu.main]]
     name = "Blog"
+    identifier = "blog"
     url  = "/blog/"
     weight = 2
 
@@ -145,7 +146,6 @@ paginate = 10 # Define the number of posts per page
 
 # Enable and disable widgets for the right sidebar
 [params.widgets]
-    authors = true
     categories = true
     tags = true
     search = true
