@@ -65,7 +65,7 @@ paginate = 10 # Define the number of posts per page
     date_format = "January 2, 2006" # Format dates with Go's time formatting
 
     # Google Maps API key (if not set will default to not passing a key.)
-    googleMapsApiKey = "AIzaSyCFhtWLJcE30xOAjcbSFi-0fnoVmQZPb1Y"
+    googleMapsApiKey = ""
 
     # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
     style = "default"
@@ -90,26 +90,17 @@ paginate = 10 # Define the number of posts per page
 # Enable the contact form by entering your Formspree.io email
     email = "your@email.com"
 
-    logo = "img/logo.png"
-    address = """<p><strong>Universal Ltd.</strong>
-        <br>13/25 New Avenue
-        <br>Newtown upon River
-        <br>45Y 73J
-        <br>England
-        <br>
-        <strong>Great Britain</strong>
-      </p>
-      """
-    latitude = "-12.043333"
-    longitude = "-77.028333"
-    
+    logo = ""
+    address = ""
+      
     viewMorePostLink = "/blog/"
     author = ""
-    defaultKeywords = ["devows", "hugo", "go"]
-    defaultDescription = "Site template made by devcows using hugo"
+    defaultKeywords = []
+    defaultDescription = ""
 
 [Permalinks]
     blog = "/blog/:year/:month/:day/:filename/"
+    authors = "/authors/:filename/"
 
 ### Widget things -----------------------------------
 
