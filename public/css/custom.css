@@ -1,0 +1,24 @@
+/* Custom styles to overwrite the style.default.css file */
+
+/* Change header background image for the blog page */
+.bar.background-pentagon {
+  background: url('../img/texture-blue-polygon.jpg') center center repeat;
+}
+#heading-breadcrumbs {
+  background: url('../img/texture-blue-polygon.jpg') center center repeat;
+}
+
+
+.box-image-text .image {
+  min-height: 200px;
+  max-height: 200px;
+}
+
+.box-simple {
+  min-height: 230px;
+}
+
+/* Little helper class that puts an "&" between multiple author tags */
+.author_sep + .author_sep:before {
+    content: " & "
+}
