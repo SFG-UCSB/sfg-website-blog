@@ -101,7 +101,7 @@ paginate = 10 # Define the number of posts per page
 
 [Permalinks]
     blog = "/blog/:year/:month/:day/:filename/"
-    authors = "/authors/:filename/"
+    about = "/about/:filename/"
 
 ### Widget things -----------------------------------
 
