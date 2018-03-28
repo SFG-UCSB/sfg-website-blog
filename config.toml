@@ -36,8 +36,8 @@ paginate = 10 # Define the number of posts per page
     
 [[menu.main]]
     name = "About Us"
-    identifier = "authors"
-    url  = "/authors/"
+    identifier = "about"
+    url  = "/about/"
     weight = 4
 
 # Footer contact icons (ignore that it says topbar... changed this from original template and changing the name will probably break everything)
@@ -149,6 +149,7 @@ paginate = 10 # Define the number of posts per page
     categories = true
     tags = true
     search = true
+    authors = true
 
 
 
