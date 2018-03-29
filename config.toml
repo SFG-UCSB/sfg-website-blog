@@ -117,13 +117,6 @@ paginate = 10 # Define the number of posts per page
     title = "Recent posts from our blog"
     subtitle = "We like to write about code, random interests, etc..."
     
-# Authors - Box with set number of recent posts
-# All posts are defined in their own files stored in '/content/blog/'
-[params.authors]
-    enable = true
-    title = "Contributing Authors"
-    subtitle = "More about us..."
-    
 # See More - Send people to the main SFG web page
 [params.see_more]
     enable = true
