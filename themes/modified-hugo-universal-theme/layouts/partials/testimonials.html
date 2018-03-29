@@ -26,19 +26,19 @@
                                     <p>{{ .position }}</p>
                                 </div>
                                 <div>
-                                      {{ if isset .site }}
+                                      {{ if isset .Params "site" }}
                                       <a href="{{ .site }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-external-link'></i></a>
                                       {{ end }}
-                                      {{ if isset .github }}
+                                      {{ if isset .Params "github" }}
                                       <a href="{{ .github }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-github'></i></a>
                                       {{ end }}
-                                      {{ if isset .twitter }}
+                                      {{ if isset .Params "twitter" }}
                                       <a href="{{ .twitter }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-twitter'></i></a>
                                       {{ end }}
-                                      {{ if isset .instagram }}
+                                      {{ if isset .Params "instagram" }}
                                       <a href="{{ .instagram }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-instagram'></i></a>
                                       {{ end }}
-                                      {{ if isset .email }}
+                                      {{ if isset .Params "email" }}
                                       <a href="{{ .email }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-envelope'></i></a>
                                       {{ end }}
                                   </div>
