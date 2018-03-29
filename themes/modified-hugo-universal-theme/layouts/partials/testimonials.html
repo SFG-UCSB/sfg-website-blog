@@ -28,7 +28,7 @@
                                     <h5>{{ .name }}</h5>
                                     <p>{{ .position }}</p>
                                 </div>
-                                <p class="pull-right">
+                                <div>
                                       {{ if isset .Params "site"}}
                                       <a href="{{ .Params.site }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-external-link'></i></a>
                                       {{ end }}
@@ -44,7 +44,7 @@
                                       {{ if isset .Params "email"}}
                                       <a href="{{ .Params.email }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-envelope'></i></a>
                                       {{ end }}
-                                    </p>
+                                  </div>
                             </div>
                         </div>
                     </li>
