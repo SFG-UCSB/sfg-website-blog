@@ -121,7 +121,7 @@ paginate = 10 # Define the number of posts per page
 [params.see_more]
     enable = true
     title = "Do you want to learn more about us?"
-    subtitle = "Find information on our team, projects, and places we work on our main website"
+    subtitle = "Find more information on our team, projects, and places we work on our main website"
     link_url = "http://sfg.msi.ucsb.edu/"
     link_text = "Visit our main site"
     

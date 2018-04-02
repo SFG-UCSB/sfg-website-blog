@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Google on Sustainable Fisheries Group</title>
+    <link>/tags/google/</link>
+    <description>Recent content in Google on Sustainable Fisheries Group</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 12 Jul 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/google/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SFG Looks to the Sky to Understand the Sea</title>
+      <link>/blog/2017/07/12/under-the-sea/</link>
+      <pubDate>Wed, 12 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2017/07/12/under-the-sea/</guid>
+      <description>In June, SFG team members Tyler Clavelle, Grant McDermott, and Juan Mayorga traveled to Palo Alto, California to participate in the 2017 User Summit for Google’s Earth Engine (GEE), a planetary-scale platform for earth science data and analysis. GEE is transforming geospatial research by enabling scientists to ask and answer questions at scales that have never before been possible. Since it’s inception in 2010, researchers have used GEE for hundreds of groundbreaking studies and applications, such as mapping global forest cover, surface water, and malaria risk, in high-resolution.</description>
+    </item>
+    
+  </channel>
+</rss>
