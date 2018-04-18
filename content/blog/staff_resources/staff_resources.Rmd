@@ -4,7 +4,7 @@ date: "2018-02-24T13:50:46+02:00"
 authors: ["Tyler Clavelle"]
 tags: ["SFG", "R", "GitHub", "RStudio", "Box"]
 categories: ["Basic R"]
-banner: "img/banners/banner-1.jpg"
+banner: "img/blog/staff-resources.png"
 tbanner: ""
 output: 
   blogdown::html_page:
