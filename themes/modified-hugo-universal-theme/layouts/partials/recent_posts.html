@@ -42,7 +42,7 @@
                               {{ if gt (len .Params.authors) 0 }}
                               By
                                 {{ range sort .Params.authors }}
-                                          <a class="author_sep" href="{{ $.Site.BaseURL }}authors/{{ . | urlize | lower }}">{{ . }}</a>
+                                          <a class="author_sep" href="{{ $.Site.BaseURL }}about/{{ . | urlize | lower }}">{{ . }}</a>
                                 {{ end }}
                             {{ end }}
                             {{ end }}
