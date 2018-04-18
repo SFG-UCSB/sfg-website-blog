@@ -25,11 +25,17 @@
 
         <div id="content">
             <div class="container">
+              
+                <!-- *** Name *** -->
+                <div class="row">
+                  <div class="col-md-12">
+                    <h1>{{ .Params.title }}</h1>
+                  </div>
+                </div>
 
                 <!-- *** Photo and Social Media Icons *** -->
                 <div class="row">
                   <div class="col-md-12">
-                      <h1>{{ .Params.title }}</h1>
                       <div class="image" align="center">
                           {{ if .Params.photo }}
                           <img src="{{ .Site.BaseURL}}{{ .Params.photo }}" class="img-responsive" alt="">
