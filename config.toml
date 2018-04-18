@@ -101,9 +101,9 @@ paginate = 10 # Define the number of posts per page
 
     uglyurls = true
     
-#[Permalinks]
-    #blog = "/blog/:filename/"
-    #about = "/about/:filename/"
+[Permalinks]
+    blog = "/blog/:filename/"
+    about = "/about/:filename/"
 
 ### Widget things -----------------------------------
 
