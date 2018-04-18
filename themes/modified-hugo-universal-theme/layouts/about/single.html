@@ -18,24 +18,18 @@
         <div id="content">
             <div class="container">
 
+                <!-- *** Photo and Social Media Icons *** -->
                 <div class="row">
-                  <div class="col-md-3">
-                      <div class="image">
+                  <div class="col-md-12">
+                      <div class="image" align="center">
                           {{ if .Params.photo }}
                           <img src="{{ .Site.BaseURL}}{{ .Params.photo }}" class="img-responsive" alt="">
                           {{ else }}
                           <img src="{{ .Site.BaseURL}}img/placeholder.png" class="img-responsive" alt="">
                           {{ end }}
                         </div>
-                      </div>
-                    <!-- *** LEFT COLUMN *** -->
-                    <div class="col-md-9" id="blog-post">
-                        <div id="post-content">
-                          {{ .Content }}
-                        </div>
-                        <!-- /#post-content -->
                         
-                        <p class="pull-right">
+                        <p align="center">
                                       {{ if isset .Params "site"}}
                                       <a href="{{ .Params.site }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-external-link'></i></a>
                                       {{ end }}
@@ -52,11 +46,22 @@
                                       <a href="{{ .Params.email }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-envelope'></i></a>
                                       {{ end }}
                         </p>
+                        
+                      </div>
+                  </div>
+                  
+                  <!-- *** Biography *** -->
+                  <div class="row">
+                    <div class="col-md-12" id="blog-post">
+                        <div id="post-content">
+                          {{ .Content }}
+                        </div>
 
                     </div>
+                  </div>
                     <!-- /#blog-post -->
-                    
-                    <div class="col-md-12 right">
+                  <div class="row">  
+                    <div class="col-md-12">
                       <p class="pull-right">
                       <a href="{{ $.Site.BaseURL }}about/" class="btn btn-template-main">Back</a>
                       <br>
