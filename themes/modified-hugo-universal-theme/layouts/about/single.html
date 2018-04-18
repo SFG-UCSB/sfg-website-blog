@@ -17,6 +17,7 @@
           <div class="container">
               <div class="row">
                 <div class="col-md-12">
+                  <h1></h1>
                 </div>
               </div>
           </div>
@@ -28,7 +29,7 @@
                 <!-- *** Photo and Social Media Icons *** -->
                 <div class="row">
                   <div class="col-md-12">
-                      {{ .Params.title }}
+                      <h1>{{ .Params.title }}</h1>
                       <div class="image" align="center">
                           {{ if .Params.photo }}
                           <img src="{{ .Site.BaseURL}}{{ .Params.photo }}" class="img-responsive" alt="">
@@ -72,6 +73,7 @@
                     <div class="col-md-12">
                       <p class="pull-right">
                       <a href="{{ $.Site.BaseURL }}about/" class="btn btn-template-main">Back</a>
+                      <br>
                       <br>
                       </p>
                     </div>
