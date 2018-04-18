@@ -5,6 +5,7 @@ authors: ["Tyler Clavelle"]
 tags: ["SFG", "R", "GitHub", "RStudio", "Box"]
 categories: ["Basic R"]
 banner: "img/banners/banner-1.jpg"
+tbanner: ""
 output: 
   blogdown::html_page:
     toc: TRUE

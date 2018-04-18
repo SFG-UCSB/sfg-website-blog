@@ -4,6 +4,7 @@ date = "2015-10-02T21:49:20+02:00"
 tags = ["R", "GitHub", "Blogdown", "blog"]
 categories = ["R", "GitHub"]
 banner = "img/banners/banner-4.jpg"
+tbanner = ""
 authors = ["Tyler Clavelle"]
 menu = "https://tclavelle.github.io/blog/blogdown_github/"
 +++

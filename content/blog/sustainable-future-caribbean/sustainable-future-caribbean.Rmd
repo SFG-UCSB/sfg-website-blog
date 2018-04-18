@@ -5,6 +5,7 @@ authors: ["Jason Flower"]
 tags: ["SFG", "Waitt"]
 categories: ["News"]
 banner: "img/blog/sustainable-future-caribbean.jpg"
+tbanner: ""
 output: 
   blogdown::html_page:
     toc: FALSE
