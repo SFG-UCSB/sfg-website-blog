@@ -26,17 +26,6 @@
         <div id="content">
             <div class="container">
               
-                <!-- *** Name *** -->
-                <div class="row">
-                  <div class="col-md-12">
-                    {{ if .Params.title }}
-                    {{ if gt (len .Params.title) 0 }}
-                    <h1>{{ .Title }}</h1>
-                    {{ end }}
-                    {{ end }}
-                  </div>
-                </div>
-
                 <!-- *** Photo and Social Media Icons *** -->
                 <div class="row">
                   <div class="col-md-12">
@@ -48,6 +37,9 @@
                           {{ end }}
                         </div>
                         <br>
+                        <p align="center">
+                          <h1>{{ .Params.title}}</h1>
+                        </p>
                         <p align="center">
                                       {{ if isset .Params "site"}}
                                       <a href="{{ .Params.site }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-external-link'></i></a>
