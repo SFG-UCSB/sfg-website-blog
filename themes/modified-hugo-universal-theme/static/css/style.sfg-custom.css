@@ -1757,8 +1757,8 @@ fieldset[disabled] .btn-template-primary.active {
   padding: 20px 0;
   margin-bottom: 40px;
 }
-#heading-breadcrumbs.about {
-  background: url('../img/about-header.jpg') center center repeat;
+#heading-breadcrumbs-about {
+  background: url('../img/blog-header.jpg') center center repeat;
   padding: 20px 0;
   margin-bottom: 40px;
 }
