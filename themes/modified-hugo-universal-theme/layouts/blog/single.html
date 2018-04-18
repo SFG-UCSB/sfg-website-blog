@@ -13,15 +13,17 @@
 
         </header>
 
-        <div id="heading-breadcrumbs">
-          <div class="container">
+        <!-- *** Cover Picture*** -->
+        <div class="container">
             <div class="row">
               <div class="col-md-12">
-                <h1></h1>
+                {{ if .Params.banner }}
+                  <img src="{{ .Site.BaseURL}}{{ .Params.banner }}" class="img-responsive" alt="">
+                {{ else }}
+                  <img src="{{ .Site.BaseURL}}img/texture-blue-polygon.jpg" class="img-responsive" alt="">
               </div>
             </div>
          </div>
-        </div>
 
         <div id="content">
             <div class="container">
@@ -32,7 +34,7 @@
 
                     <div class="col-md-9" id="blog-post">
                       
-                      <h2>{{ .Title }}</h2>
+                      <h1>{{ .Title }}</h1>
 
                         <p class="text-muted text-uppercase mb-small text-right">
                           {{ if .Params.authors }}
