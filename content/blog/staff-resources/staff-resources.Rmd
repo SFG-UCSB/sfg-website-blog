@@ -33,7 +33,7 @@ Packages are groups of functions that are designed to excel at certain tasks (ma
 
 To install a new package, click on the "Install" button located under the "Packages" tab in RStudio. This will open a pop-up where you can search for and install R packages hosted on CRAN. Alternatively, if you know the name of the package you want to install, you can run `install.packages('package_name')`
 
-<div style="width:100%>
+<div style="width:300px">
 ![](staff-resources-package-install.png)
 </div>
   
