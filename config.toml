@@ -35,7 +35,7 @@ paginate = 10 # Define the number of posts per page
     weight = 3
     
 [[menu.main]]
-    name = "About Us"
+    name = "About the Authors"
     identifier = "about"
     url  = "/about/"
     weight = 4
@@ -119,13 +119,6 @@ paginate = 10 # Define the number of posts per page
     title = "Recent posts from our blog"
     subtitle = "We like to write about code, random interests, etc..."
     
-# Recent Posts - Box with set number of recent posts
-# All posts are defined in their own files stored in '/content/blog/'
-[params.contributing_authors]
-    enable = true
-    title = "Contributing authors"
-    subtitle = "Sometimes we do cool things that don't involve code..."
-    
 # See More - Send people to the main SFG web page
 [params.see_more]
     enable = true
@@ -142,9 +135,9 @@ paginate = 10 # Define the number of posts per page
 # Testimonials - Box with quotes, names, and pictures of various people... Might put staff here
 # All testimonials are defined in their own files stored in '/data/testimonials/'
 [params.testimonials]
-    enable = true
-    title = "Contributing Authors"
-    subtitle = "More information"
+    enable = false
+    title = ""
+    subtitle = ""
 
 # Clients - Box with logos that link to external sites. Probably not using this section
 # All clients are defined in their own files stored in '/data/clients/'
