@@ -29,7 +29,11 @@
                 <!-- *** Name *** -->
                 <div class="row">
                   <div class="col-md-12">
-                    <h1>{{ .Params.title }}</h1>
+                    {{ if .Params.title }}
+                    {{ if gt (len .Params.title) 0 }}
+                    <h1>{{ .Title }}</h1>
+                    {{ end }}
+                    {{ end }}
                   </div>
                 </div>
 
