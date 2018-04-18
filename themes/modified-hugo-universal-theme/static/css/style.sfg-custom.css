@@ -1752,7 +1752,7 @@ fieldset[disabled] .btn-template-primary.active {
   padding: 20px 0;
   margin-bottom: 40px;
 }
-#heading-breadcrumbs.blog {
+#heading-breadcrumbs-blog {
   background: url('../img/blog-header.jpg') center center repeat;
   padding: 20px 0;
   margin-bottom: 40px;
