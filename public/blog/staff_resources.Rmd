@@ -1,0 +1,85 @@
+---
+title: Staff Resources
+date: "2018-02-24T13:50:46+02:00"
+authors: ["Tyler Clavelle"]
+tags: ["SFG", "R", "GitHub", "RStudio", "Box"]
+categories: ["Basic R"]
+banner: "img/blog/staff-resources.png"
+tbanner: ""
+output: 
+  blogdown::html_page:
+    toc: TRUE
+    toc_depth: 3
+---
+
+## **Introduction**
+Here at SFG we use numerous programs and platforms to organize, collaborate, and conduct our research. While we recognize that everyone has a workflow that works for them, we want to make sure everyone is familiar with the tools we use and how to get the most out of them in your own workflows and project management.
+
+***
+
+## **R/RStudio**
+R is SFG's programming language of choice. Nearly all our research projects are
+written in R and most of us (cough, Cody, cough) use the RStudio IDE. R and RStudio allow us
+to build models, write reproducible reports with RMarkdown, build interactive applications with
+Shiny, and even connect to outside databases like Global Fishing Watch.  
+
+### Installation
+R and RStudio are **separate** things - R is a programming language software for statistical computing and graphics from [CRAN](https://cran.r-project.org) and RStudio is a powerful user interface, referred to as an *integrated development environment* (IDE), for R. Because R/RStudio are separate, you will need to install and update them individually. If you do not keep both relatively up-to-date you will likely run into problems. 
+
++ [Installing R and RStudio](http://stat545.com/block000_r-rstudio-install.html) by Jenny Bryan
+
+### Packages
+Packages are groups of functions that are designed to excel at certain tasks (making plots, standardizing dates, reading/writing large data files, etc.). Many useful packages come standard with R when you download it, however, many more are available from CRAN and GitHub. 
+
+To install a new package, click on the "Install" button located under the "Packages" tab in RStudio. This will open a pop-up where you can search for and install R packages hosted on CRAN. Alternatively, if you know the name of the package you want to install, you can run `install.packages('package_name')`
+  
+![](/img/blog/staff-resources-package-install.png)
+  
+You can also install packages directly from a GitHub repository. To do this, you will first need to install the devtools package (`install.packages('devtools')`). Once installed, you can install packages from GitHub repositories with the function `install_github()`. As an example, you can install Dan Ovando's R package for applying the global upside model (GUM) to catch timeseries with the following: `install_github('DanOvando/GUM')`.
+
+Once installed, the packages you need for an analysis are loaded by the `library('package_name')` function. Additionally, you can use a package function at anytime by including the package name and `::` in your code. For example, `readr::read_csv()` will work even if I have not already loaded readr.
+
+The following packages are commonly used by SFG:
+
++ **tidyverse** - More of a meta package, the tidyverse package contains several seperate packages for data processing (**dplyr** & **tidyr**), visualization (**ggplot2**), reading and writing data (**readr**), and functional programming (**purrr**)
++ **readxl** - read and write data from/to Excel workbooks, including workbooks with multiple worksheets
++ **broom** - Convert various R data objects into tidy data frames
++ **sf**, **rgeos**, **rgdal** - Key packages for spatial analysis 
++ *boxr* is a R package that allows you to read/write data directly to your Box account 
++ **rmarkdown** - Use R code to author reproducible reports, presentations, and websites
++ **shiny** - Create web applications using R
+
+***
+## **Github**
+GitHub is a cloud-based storage platform that integrates with the **git** version control system. It allows users to store, track progress, and collaborate on any analyses involving code, regardless of the coding language. It is an essential tool for SFG and a great professional skill to develop. All SFG researchers should create their own GitHub account (if you don't already have one). SFG also has a GitHub organization account under the handle [\@SFG-UCSB](https://github.com/SFG-UCSB). Everyone should request to be added to this organization and create repositories under the organization account when starting a new SFG project.
+
+### Installation
+As with R/RStudio, git/GitHub are separate things and need to be installed and registered for individually. The initial setup can be a bit of a pain, but if coding is a key part of your job (or just a hobby) than the pros vastly outweigh the cons. Thankfully, R instructor extrordinaire Jenny Bryan created [Happy git with R](http://happygitwithr.com) to walk you through everything you need to get setup and start using git, GitHub, and RStudio.
+
+  + **Note:** If you work on a Bren or MSI network computer, you need to keep your GitHub and R related files on the local (C) drive. UCSB network security will not allow git to properly track files hosted on network storage drives.
+
+***
+## **Gmail & Google Calendar**
+Gmail and Google Calendar are the official email and scheduling platforms for UCSB. It is recommended that you use your `@ucsb.edu` email as your primary work email. Please also use this email when scheduling and inviting other SFG members to meetings on Google Calendar. 
+
+  + **Reserving the SFG conference room in MSI:** The SFG conference room can be reserved for group meetings by inviting the email address `bren-sfg@ucsb.edu` to the desired meeting. You can add this calendar to your list of calendars by searching for it in the "Other calendars" search bar of your Google Calendar. You can then toggle the calendar on/off to see when the room is available.
+
+***
+## **Box**
+Box is the official cloud storage platform of UCSB and all students, staff, and faculty have unlimited Box storage, which you can access by logging in [here](https://ucsb.account.box.com/login) with your UCSBNetID. Everyone should be a collaborator on our shared "SFG Centralized Resources". Please do your best to keep important project materials in a Box folder for your project.
+
+  + [Box Sync](https://sites.box.com/sync4/) is desktop application for Windows and Mac that allows you to sync local versions of your Box folders. Box Sync is not currently supported by UCSB IT and may not function properly for everyone
+  + `boxr` is a R package that allows you to read/write data directly to your Box account 
+
+***
+## **Slack**
+Slack is SFG's workplace messaging app. It is a great way to organize conversations around specific topics and cut down on unneccssary email. There is also built in direct messaging, similar to Gchat, for individual conversations. Slack is available as both a web-based platform and a desktop app. In either case, you can simply keep Slack running in the background and you will be notified if anyone references you in a message.
+
+In addition to project specific channels, SFG uses numerous group channels for information related to operations, communications, publications, and randomness. These channels include:
+
+  + *\#code* - Ask questions or share resources related to coding
+  + *\#communications* - Share and discuss any materials for communicating SFG's work, such as press releases, news articles, and social media posts. This channel is also integrated with SFG's Twitter account (@sfgucsb) so you can see what we're tweeting if you're interested
+  + *\#general* - The home for any general work-related questions or discussions
+  + *\#random* - Jokes, housing, cartoons, and of course cat memes...
+  + *\#reports-publications* - Share any new SFG publications or reports
+

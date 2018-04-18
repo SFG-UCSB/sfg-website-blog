@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/blog/staff_resources/staff_resources/</loc>
+    <loc>/blog/staff_resources/</loc>
     <lastmod>2018-02-24T13:50:46+02:00</lastmod>
   </url>
   
@@ -18,12 +18,23 @@
   </url>
   
   <url>
+    <loc>/blog/extracting-data-apis/</loc>
+    <lastmod>2017-06-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/building-blog-blogdown-github/</loc>
-    <lastmod>2015-10-02T21:49:20+02:00</lastmod>
+    <lastmod>2017-01-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/about/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/api/</loc>
+    <lastmod>2017-06-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -34,14 +45,8 @@
   </url>
   
   <url>
-    <loc>/tags/blog/</loc>
-    <lastmod>2015-10-02T21:49:20+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/tags/blogdown/</loc>
-    <lastmod>2015-10-02T21:49:20+02:00</lastmod>
+    <lastmod>2017-01-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -74,14 +79,20 @@
   </url>
   
   <url>
-    <loc>/categories/github/</loc>
-    <lastmod>2015-10-02T21:49:20+02:00</lastmod>
+    <loc>/tags/google/</loc>
+    <lastmod>2017-07-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/google/</loc>
-    <lastmod>2017-07-12T00:00:00+00:00</lastmod>
+    <loc>/tags/httr/</loc>
+    <lastmod>2017-06-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/jsonlite/</loc>
+    <lastmod>2017-06-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -106,12 +117,6 @@
   </url>
   
   <url>
-    <loc>/categories/r/</loc>
-    <lastmod>2015-10-02T21:49:20+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/tags/rstudio/</loc>
     <lastmod>2018-02-24T13:50:46+02:00</lastmod>
     <priority>0</priority>
@@ -131,7 +136,7 @@
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2015-10-02T21:49:20+02:00</lastmod>
+    <lastmod>2017-06-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
