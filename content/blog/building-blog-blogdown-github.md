@@ -2,7 +2,7 @@
 title = "Building a blog with Blogdown and GitHub"
 date = "2015-10-02T21:49:20+02:00"
 tags = ["R", "GitHub", "Blogdown", "blog"]
-categories = ["R", "GitHub"]
+categories = ["Basic R"]
 banner = "img/banners/banner-4.jpg"
 tbanner = ""
 authors = ["Tyler Clavelle"]
