@@ -13,7 +13,15 @@
 
         </header>
 
-        {{ partial "breadcrumbs.html" . }}
+        <div id="heading-breadcrumbs">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h1></h1>
+              </div>
+            </div>
+         </div>
+        </div>
 
         <div id="content">
             <div class="container">
@@ -23,6 +31,8 @@
                     <!-- *** LEFT COLUMN *** -->
 
                     <div class="col-md-9" id="blog-post">
+                      
+                      <h2>{{ .Title }}</h2>
 
                         <p class="text-muted text-uppercase mb-small text-right">
                           {{ if .Params.authors }}
