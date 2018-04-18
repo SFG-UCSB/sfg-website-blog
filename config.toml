@@ -35,7 +35,7 @@ paginate = 10 # Define the number of posts per page
     weight = 3
     
 [[menu.main]]
-    name = "About the Authors"
+    name = "About Us"
     identifier = "about"
     url  = "/about/"
     weight = 4
