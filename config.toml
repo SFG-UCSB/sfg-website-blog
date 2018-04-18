@@ -151,6 +151,7 @@ paginate = 10 # Define the number of posts per page
     categories = true
     tags = true
     search = true
+    authors = true
 
 
 
