@@ -1752,16 +1752,6 @@ fieldset[disabled] .btn-template-primary.active {
   padding: 20px 0;
   margin-bottom: 40px;
 }
-#heading-blog {
-  background: url('../img/blog-header.jpg') center center repeat;
-  padding: 20px 0;
-  margin-bottom: 40px;
-}
-#heading-about {
-  background: url('../img/blog-header.jpg') center center repeat;
-  padding: 20px 0;
-  margin-bottom: 40px;
-}
 #heading-breadcrumbs.no-mb {
   margin-bottom: 0;
 }
