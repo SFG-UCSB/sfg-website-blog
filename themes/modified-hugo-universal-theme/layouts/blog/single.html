@@ -17,8 +17,8 @@
         <div class="container">
             <div class="row">
               <div class="col-md-12">
-                {{ if .Params.banner }}
-                  <img src="{{ .Site.BaseURL}}{{ .Params.banner }}" class="img-responsive" alt="">
+                {{ if .Params.cover }}
+                  <img src="{{ .Site.BaseURL}}{{ .Params.cover }}" class="img-responsive" alt="">
                 {{ else }}
                   <img src="{{ .Site.BaseURL}}img/texture-blue-polygon.jpg" class="img-responsive" alt="">
                 {{ end }}

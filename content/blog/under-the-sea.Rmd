@@ -5,6 +5,7 @@ authors: ["Tyler Clavelle"]
 tags: ["SFG", "Google"]
 categories: ["News"]
 banner: "img/blog/under-the-sea.jpg"
+cover: "img/blog/under-the-sea-cover.jpg"
 output: 
   blogdown::html_page:
     toc: FALSE

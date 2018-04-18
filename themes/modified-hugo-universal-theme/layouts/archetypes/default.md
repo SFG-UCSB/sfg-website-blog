@@ -5,6 +5,7 @@ authors = []
 description = ""
 menu = ""
 banner = ""
+cover = ""
 images = []
 +++
 
