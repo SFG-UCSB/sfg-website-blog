@@ -35,8 +35,24 @@
                         </div>
                         <!-- /#post-content -->
                         
-                        <p class="read-more">
-                          <p class="read-more"><a href="{{ $.Site.BaseURL }}about/" class="btn btn-template-main">Back</a></p>
+                        <p class="pull-right">
+                                      {{ if isset .Params "site"}}
+                                      <a href="{{ .Params.site }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-external-link'></i></a>
+                                      {{ end }}
+                                      {{ if isset .Params "github"}}
+                                      <a href="{{ .Params.github }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-github'></i></a>
+                                      {{ end }}
+                                      {{ if isset .Params "twitter"}}
+                                      <a href="{{ .Params.twitter }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-twitter'></i></a>
+                                      {{ end }}
+                                      {{ if isset .Params "instagram"}}
+                                      <a href="{{ .Params.instagram }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-instagram'></i></a>
+                                      {{ end }}
+                                      {{ if isset .Params "email"}}
+                                      <a href="{{ .Params.email }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-envelope'></i></a>
+                                      {{ end }}
+                              <p class="read-more"><a href="{{ $.Site.BaseURL }}about/" class="btn btn-template-main">Back</a></p>
+                          
                         </p>
 
                     </div>
