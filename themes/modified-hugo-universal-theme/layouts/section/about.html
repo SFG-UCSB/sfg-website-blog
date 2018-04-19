@@ -32,7 +32,7 @@
                 <div class="row">
                     <div class="col-md-12" id="blog-listing-medium">
                       <h2>Our Organization</h2>
-                        {{ $paginator := (.Paginate .Data.Pages) }}
+                        {{ $paginator := .Paginate (where .Data.Pages "Type" "about") }}
                         {{ $place := where $paginator.Pages "Params.type" "place" }}
                         {{ $person := where $paginator.Pages "Params.type" "person" }}
                         {{ range $place.ByTitle }}
