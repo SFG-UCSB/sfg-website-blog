@@ -32,7 +32,8 @@
                 <div class="row">
                     <div class="col-md-12" id="blog-listing-medium">
                       <h2>Our Organization</h2>
-                        {{ range (where (where .Data.Pages "Type" "about") "Params.type" "place") }}
+                        {{ $paginator := .Paginate (where .Data.Pages "Type" "about") }}
+                        {{ range (where $paginator.Pages "Params.type" "place") }}
                         <section class="post">
                             <div class="row">
                                 <div class="col-md-3">
@@ -79,8 +80,7 @@
                 <div class="row">
                     <div class="col-md-12" id="blog-listing-medium">
                         <h2>Contributing Authors</h2>
-                        {{ $paginator := .Paginate (where (where .Data.Pages "Type" "about") "Params.type" "person") }}
-                        {{ range $paginator.Pages.ByTitle }}
+                        {{ range (where $paginator.Pages "Params.type" "person") }}
                         <section class="post">
                             <div class="row">
                                 <div class="col-md-3">
