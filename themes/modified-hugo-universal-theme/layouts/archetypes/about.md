@@ -1,7 +1,7 @@
 +++
 tags = []
 photo = ""
-type = ""
+category = ""
 site = ""
 github = ""
 twitter = ""

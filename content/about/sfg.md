@@ -1,7 +1,7 @@
 +++
 title = "The Sustainable Fisheries Group (SFG)"
 photo = "img/people/sfg.png"
-type = "place"
+category = "place"
 site = "http://sfg.msi.ucsb.edu/"
 github = "https://github.com/SFG-UCSB"
 twitter = "https://twitter.com/sfgucsb"

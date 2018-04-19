@@ -1,7 +1,7 @@
 +++
 title = "Kat Millage"
 photo = "img/people/kat-millage.jpg"
-type = "person"
+category = "person"
 site = "http://www.katmillage.com/"
 github = "https://github.com/kmillage"
 twitter = "https://twitter.com/KatMillage"

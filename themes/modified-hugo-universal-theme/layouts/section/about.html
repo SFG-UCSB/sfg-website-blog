@@ -32,14 +32,13 @@
                 <div class="row">
                     <div class="col-md-12" id="blog-listing-medium">
                       <h2>Our Organization</h2>
-                        {{ $paginator := .Paginate (where .Data.Pages "Type" "about") }}
-                        {{ range (where $paginator.Pages "Params.type" "place") }}
+                        {{ $v1 := (where .Data.Pages "Params.type" "place") }}
                         <section class="post">
                             <div class="row">
                                 <div class="col-md-3">
                                   <div class="image">
                                       <a href="{{ .Permalink }}">
-                                          {{ if .Params.photo }}
+                                          {{ if $v1.Params.photo }}
                                           <img src="{{ .Site.BaseURL}}{{ .Params.photo }}" class="img-responsive" alt="">
                                           {{ else }}
                                           <img src="{{ .Site.BaseURL}}img/placeholder.png" class="img-responsive" alt="">
@@ -48,30 +47,29 @@
                                   </div>
                                 </div>
                                 <div class="col-md-9">
-                                    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                                    <h2><a href="{{ .Permalink }}">{{ $v1.Title }}</a></h2>
                                     
-                                    <p class="intro">{{ .Summary }}</p>
+                                    <p class="intro">{{ $v1.Summary }}</p>
                                     <p class="pull-right">
-                                      {{ if isset .Params "site"}}
+                                      {{ if isset $v1.Params "site"}}
                                       <a href="{{ .Params.site }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-external-link'></i></a>
                                       {{ end }}
-                                      {{ if isset .Params "github"}}
+                                      {{ if isset $v1.Params "github"}}
                                       <a href="{{ .Params.github }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-github'></i></a>
                                       {{ end }}
-                                      {{ if isset .Params "twitter"}}
+                                      {{ if isset $v1.Params "twitter"}}
                                       <a href="{{ .Params.twitter }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-twitter'></i></a>
                                       {{ end }}
-                                      {{ if isset .Params "instagram"}}
+                                      {{ if isset $v1.Params "instagram"}}
                                       <a href="{{ .Params.instagram }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-instagram'></i></a>
                                       {{ end }}
-                                      {{ if isset .Params "email"}}
+                                      {{ if isset $v1.Params "email"}}
                                       <a href="{{ .Params.email }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-envelope'></i></a>
                                       {{ end }}
                                     </p>
                                 </div>
                             </div>
                         </section>
-                        {{ end }}
                     </div>
                 </div>
                 <br>
@@ -80,6 +78,7 @@
                 <div class="row">
                     <div class="col-md-12" id="blog-listing-medium">
                         <h2>Contributing Authors</h2>
+                        {{ $paginator := (where .Data.Pages "Type" "about") }}
                         {{ range (where $paginator.Pages "Params.type" "person") }}
                         <section class="post">
                             <div class="row">
