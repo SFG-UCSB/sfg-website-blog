@@ -7,6 +7,7 @@ github = ""
 twitter = ""
 instagram = ""
 email = ""
+google_scholar = ""
 +++
 
 <!--more-->

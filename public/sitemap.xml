@@ -91,6 +91,10 @@
   </url>
   
   <url>
+    <loc>/about/jason-flower/</loc>
+  </url>
+  
+  <url>
     <loc>/tags/jsonlite/</loc>
     <lastmod>2017-06-05T00:00:00+00:00</lastmod>
     <priority>0</priority>

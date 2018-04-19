@@ -1,9 +1,9 @@
 +++
-title = "Juan Mayorga"
-photo = "img/people/juan-mayorga.jpeg"
+title = "Jason Flower"
+photo = "img/people/jason-flower.jpg"
 category = "person"
-github = "https://github.com/juanmayorgahenao"
-twitter = "https://twitter.com/juansmayorga"
+github = "https://github.com/jflowernet"
+google_scholar = "https://scholar.google.com/citations?user=Hi4TYHgAAAAJ&hl=en"
 
 +++
 
