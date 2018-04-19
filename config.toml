@@ -110,7 +110,12 @@ paginate = 10 # Define the number of posts per page
 # Carousel - Main header box on first page
 # All carousel items are defined in their own files stored in '/data/carousel/'
 [params.carousel]
-    enable = true    
+    enable = true
+    
+[params.intro]
+    enable = true
+    title = "Welcome to our blog!"
+    subtitle = "The Sustainable Fisheries Group (SFG) is an interdisciplinary group of researchers at the University of California, Santa Barbara who aim to address critical ocean problems by bridging gaps among science, policy, and management"
 
 # Recent Posts - Box with set number of recent posts
 # All posts are defined in their own files stored in '/content/blog/'
