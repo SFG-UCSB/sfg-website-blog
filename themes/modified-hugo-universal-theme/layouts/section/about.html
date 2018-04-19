@@ -37,13 +37,16 @@
                             <div class="row">
                                 <div class="col-md-3">
                                   <div class="image">
-                                          <img src="{{ .Site.BaseURL}}/img/people/sfg.png" class="img-responsive" alt="">
+                                          <img src="{{ .Site.BaseURL}}img/people/sfg.png" class="img-responsive" alt="">
                                   </div>
                                 </div>
                                 <div class="col-md-9">
-                                    <h2>The Sustainable Fisheries Group (SFG)</h2>
-                                    
-                                    <p class="intro">SFG was founded in 2006 by marine ecologist Steve Gaines and economist Chris Costello and is a collaboration between the Marine Science Institute and the Bren School of Environmental Science and Management. SFG develops innovative science and applies it to real-world challenges to improve the sustainability of marine resources and coastal communities. SFG utilizes diverse market approaches, bioeconomic modeling, and spatial analysis to improve the ecological and economic performance of fisheries and other ocean uses.</p>
+                                  {{ if isset .Site.Params "about_name" }}
+                                    <h2>{{ .Site.Params.about_name | safeHTML }}</h2>
+                                  {{ end }}
+                                  {{ if isset .Site.Params "about_description" }}
+                                    <p class="intro">{{ .Site.Params.about_description | safeHTML }}</p>
+                                  {{ end }}
                             
                                 </div>
                             </div>
@@ -57,7 +60,7 @@
                     <div class="col-md-12" id="blog-listing-medium">
                         <h2>Contributing Authors</h2>
                         {{ $paginator := .Paginate .Data.Pages  }}
-                        {{ range $paginator.Pages.ByTitle }}
+                        {{ range (where $paginator.Pages "Params.category" "person").ByTitle }}
                         <section class="post">
                             <div class="row">
                                 <div class="col-md-3">

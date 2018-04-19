@@ -58,7 +58,6 @@ paginate = 10 # Define the number of posts per page
 
 ### General parameters ---------------------------------
     date_format = "January 2, 2006" # Format dates with Go's time formatting
-
     # Google Maps API key (if not set will default to not passing a key.)
     googleMapsApiKey = ""
 
@@ -70,11 +69,9 @@ paginate = 10 # Define the number of posts per page
 
     footer_text = """<p class="hidden-sm hidden-xs">Visit our main website at <a href="http://sfg.msi.ucsb.edu/">http://sfg.msi.ucsb.edu/</a> or you can find us on Github, Twitter, and Instagram! </p>
       <p class="hidden-md hidden-lg"></p>"""
-      
+    
 ### Contact page ###      
-# Since this template is static, the contact form uses www.formspree.io as a proxy. 
-#The form makes a POST request to their servers to send the actual email. 
-#Visitors can send up to a 1000 emails each month for free.
+# Since this template is static, the contact form uses www.formspree.io as a proxy. The form makes a POST request to their servers to send the actual email. Visitors can send up to a 1000 emails each month for free.
   
 # What you need to do for the setup?
 # - set your email address under 'email' below
@@ -93,8 +90,17 @@ paginate = 10 # Define the number of posts per page
     defaultKeywords = []
     defaultDescription = ""
 
+# About section parameters
+
+  about_name = "The Sustainable Fisheries Group (SFG)"
+  aboutPicture = "sfg.png"
+  about_description = "SFG was founded in 2006 by marine ecologist Steve Gaines and economist Chris Costello and is a collaboration between the Marine Science Institute and the Bren School of Environmental Science and Management. SFG develops innovative science and applies it to real-world challenges to improve the sustainability of marine resources and coastal communities. SFG utilizes diverse market approaches, bioeconomic modeling, and spatial analysis to improve the ecological and economic performance of fisheries and other ocean uses."
+  aboutSite = "http://sfg.msi.ucsb.edu/"
+  aboutGithub = "https://github.com/SFG-UCSB"
+  aboutInstagram = "https://www.instagram.com/sfg_ucsb/"
+  aboutTwitter = "https://twitter.com/sfgucsb"
+
     uglyurls = true
-    
 [Permalinks]
     blog = "/blog/:filename/"
     about = "/about/:filename/"
