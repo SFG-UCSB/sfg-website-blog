@@ -3,7 +3,7 @@
 ### Last updated on March 26, 2018
 
 ### General settings -------------------------------------
-baseurl = "/" # Later will try to link this to the sfg-ucsb.github.io page
+baseurl = "https://sfg-blog.netlify.com" # Where we're hosting it
 title = "Sustainable Fisheries Group"
 theme = "modified-hugo-universal-theme"
 themesDir = "./themes"
