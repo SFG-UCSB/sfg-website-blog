@@ -32,41 +32,19 @@
                 <div class="row">
                     <div class="col-md-12" id="blog-listing-medium">
                       <h2>Our Organization</h2>
-                        {{ $v1 := .Paginate (where .Data.Pages "Params.category" "place") }}
+  
                         <section class="post">
                             <div class="row">
                                 <div class="col-md-3">
                                   <div class="image">
-                                      <a href="{{ .Permalink }}">
-                                          {{ if $v1.Pages.Params.photo }}
-                                          <img src="{{ .Site.BaseURL}}{{ .Params.photo }}" class="img-responsive" alt="">
-                                          {{ else }}
-                                          <img src="{{ .Site.BaseURL}}img/placeholder.png" class="img-responsive" alt="">
-                                          {{ end }}
-                                      </a>
+                                          <img src="{{ .Site.BaseURL}}/img/people/sfg.png" class="img-responsive" alt="">
                                   </div>
                                 </div>
                                 <div class="col-md-9">
-                                    <h2><a href="{{ .Permalink }}">{{ $v1.Pages.Title }}</a></h2>
+                                    <h2>The Sustainable Fisheries Group (SFG)</h2>
                                     
-                                    <p class="intro">{{ $v1.Pages.Summary }}</p>
-                                    <p class="pull-right">
-                                      {{ if isset $v1.Pages.Params "site"}}
-                                      <a href="{{ .Params.site }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-external-link'></i></a>
-                                      {{ end }}
-                                      {{ if isset $v1.Pages.Params "github"}}
-                                      <a href="{{ .Params.github }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-github'></i></a>
-                                      {{ end }}
-                                      {{ if isset $v1.Pages.Params "twitter"}}
-                                      <a href="{{ .Params.twitter }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-twitter'></i></a>
-                                      {{ end }}
-                                      {{ if isset $v1.Pages.Params "instagram"}}
-                                      <a href="{{ .Params.instagram }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-instagram'></i></a>
-                                      {{ end }}
-                                      {{ if isset $v1.Pages.Params "email"}}
-                                      <a href="{{ .Params.email }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-envelope'></i></a>
-                                      {{ end }}
-                                    </p>
+                                    <p class="intro">SFG was founded in 2006 by marine ecologist Steve Gaines and economist Chris Costello and is a collaboration between the Marine Science Institute and the Bren School of Environmental Science and Management. SFG develops innovative science and applies it to real-world challenges to improve the sustainability of marine resources and coastal communities. SFG utilizes diverse market approaches, bioeconomic modeling, and spatial analysis to improve the ecological and economic performance of fisheries and other ocean uses.</p>
+                            
                                 </div>
                             </div>
                         </section>
@@ -78,8 +56,8 @@
                 <div class="row">
                     <div class="col-md-12" id="blog-listing-medium">
                         <h2>Contributing Authors</h2>
-                        {{ $paginator := .Paginate (where .Data.Pages "Type" "about") }}
-                        {{ range (where $paginator.Pages "Params.type" "person") }}
+                        {{ $paginator := .Paginate (where .Data.Pages "Type" "about) }}
+                        {{ range $paginator.Pages.ByTitle }}
                         <section class="post">
                             <div class="row">
                                 <div class="col-md-3">
