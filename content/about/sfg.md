@@ -1,7 +1,7 @@
 +++
-title = "Kat Millage"
+title = "The Sustainable Fisheries Group (SFG)"
 photo = "img/people/kat-millage.jpg"
-type = "person"
+type = "place"
 site = "http://www.katmillage.com/"
 github = "https://github.com/kmillage"
 twitter = "https://twitter.com/KatMillage"

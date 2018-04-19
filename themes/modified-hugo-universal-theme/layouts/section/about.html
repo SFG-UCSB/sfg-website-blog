@@ -31,8 +31,43 @@
                 <!-- *** SFG Description *** -->
                 <div class="row">
                     <div class="col-md-12" id="blog-listing-medium">
-                      <h2>The Sustainable Fisheries Group (SFG)</h2>
-                      <p>SFG was founded in 2006 by marine ecologist Steve Gaines and economist Chris Costello and is a collaboration between the <a href="http://msi.ucsb.edu/">Marine Science Institute</a> and the <a href="https://www.bren.ucsb.edu/">Bren School of Environmental Science and Management</a>. SFG develops innovative science and applies it to real-world challenges to improve the sustainability of marine resources and coastal communities. SFG utilizes diverse market approaches, bioeconomic modeling, and spatial analysis to improve the ecological and economic performance of fisheries and other ocean uses.</p>
+                      <h2>Our Organization</h2>
+                      {{ $paginator := (.Paginate .Data.Pages) }}
+                        {{ range where $paginator.Pages "Params.type" "place"}}
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-3">
+                                  <div class="image">
+                                      <a href="{{ .Permalink }}">
+                                          {{ if .Params.photo }}
+                                          <img src="{{ .Site.BaseURL}}{{ .Params.photo }}" class="img-responsive" alt="">
+                                          {{ else }}
+                                          <img src="{{ .Site.BaseURL}}img/placeholder.png" class="img-responsive" alt="">
+                                          {{ end }}
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                                    
+                                    <p class="intro">{{ .Summary }}</p>
+                                    <p class="pull-right">
+                                      {{ if isset .Params "site"}}
+                                      <a href="{{ .Params.site }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-external-link'></i></a>
+                                      {{ end }}
+                                      {{ if isset .Params "github"}}
+                                      <a href="{{ .Params.github }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-github'></i></a>
+                                      {{ end }}
+                                      {{ if isset .Params "twitter"}}
+                                      <a href="{{ .Params.twitter }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-twitter'></i></a>
+                                      {{ end }}
+                                      {{ if isset .Params "instagram"}}
+                                      <a href="{{ .Params.instagram }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-instagram'></i></a>
+                                      {{ end }}
+                                      {{ if isset .Params "email"}}
+                                      <a href="{{ .Params.email }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-envelope'></i></a>
+                                      {{ end }}
+                                    </p>
                     </div>
                 </div>
                 <br>
@@ -42,7 +77,7 @@
                     <div class="col-md-12" id="blog-listing-medium">
                         <h2>Contributing Authors</h2>
                         {{ $paginator := (.Paginate .Data.Pages) }}
-                        {{ range $paginator.Pages }}
+                        {{ range where $paginator.Pages "Params.type" "person"}}
                         <section class="post">
                             <div class="row">
                                 <div class="col-md-3">

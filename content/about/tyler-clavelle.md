@@ -1,6 +1,7 @@
 +++
 title = "Tyler Clavelle"
 photo = "img/people/tyler-clavelle.jpg"
+type = "person"
 site = "http://www.tylerclavelle.com/"
 github = "https://github.com/tclavelle"
 twitter = "https://twitter.com/tclavL?lang=en"
