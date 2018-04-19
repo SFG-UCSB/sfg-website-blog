@@ -3583,5 +3583,6 @@ a.list-group-item.active > .badge,
 }
 
 #post-picture img{
-  width: 100%;
+  max-width:100%;
+  max-height:100%;
 }

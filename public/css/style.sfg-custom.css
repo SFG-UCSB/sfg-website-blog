@@ -3578,3 +3578,11 @@ a.list-group-item.active > .badge,
   right: 15px;
 }
 
+#post-picture {
+  width: 100%;
+}
+
+#post-picture img{
+  max-width:100%;
+  max-height:100%;
+}
