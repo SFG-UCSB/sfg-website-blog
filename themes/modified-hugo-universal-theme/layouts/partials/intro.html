@@ -1,12 +1,12 @@
 {{ if isset .Site.Params "intro" }}
 {{ if .Site.Params.intro.enable }}
-<section class="bar background-image-fixed-2 no-mb color-white text-center">
+<section class="bar background-image-fixed-2 no-mb color-white">
     <div class="dark-mask"></div>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="text-uppercase">{{ .Site.Params.intro.title }}</h2>
-                <p class="lead">{{ .Site.Params.intro.subtitle }}</p>
+                <h1 class="text-uppercase">{{ .Site.Params.intro.title }}</h1>
+                <h4 class="lead">{{ .Site.Params.intro.subtitle }}</h4>
             </div>
 
         </div>
