@@ -110,7 +110,7 @@ paginate = 10 # Define the number of posts per page
 # Carousel - Main header box on first page
 # All carousel items are defined in their own files stored in '/data/carousel/'
 [params.carousel]
-    enable = true
+    enable = false
     
 [params.intro]
     enable = true
