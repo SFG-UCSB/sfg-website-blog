@@ -22,3 +22,7 @@
 .author_sep + .author_sep:before {
     content: " & "
 }
+
+.contact-sep + .contact-sep:before {
+    content: " | "
+}
