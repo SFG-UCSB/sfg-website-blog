@@ -32,8 +32,7 @@
                 <div class="row">
                     <div class="col-md-12" id="blog-listing-medium">
                       <h2>Our Organization</h2>
-                        {{ $paginator := (.Paginate .Data.Pages) }}
-                        {{ range where $paginator.Pages "Params.type" "place"}}
+                        {{ range where .Data.Pages "Params.type" "place"}}
                         <section class="post">
                             <div class="row">
                                 <div class="col-md-3">
@@ -80,7 +79,7 @@
                 <div class="row">
                     <div class="col-md-12" id="blog-listing-medium">
                         <h2>Contributing Authors</h2>
-                        {{ range where $paginator.Pages "Params.type" "person"}}
+                        {{ range where .Data.Pages "Params.type" "person"}}
                         <section class="post">
                             <div class="row">
                                 <div class="col-md-3">
@@ -121,7 +120,7 @@
                         </section>
                         {{ end }}
 
-                        <ul class="pager">
+                        <!--<ul class="pager">
                             {{ if .Paginator.HasPrev }}
                             <li class="previous"><a href="{{ .Site.BaseURL }}{{ .Paginator.Prev.URL }}">&larr; {{ i18n "newer" }}</a></li>
                             {{ else }}
@@ -133,7 +132,7 @@
                             {{ else }}
                             <li class="next disabled"><a href="#">{{ i18n "older" }} &rarr;</a></li>
                             {{ end }}
-                        </ul>
+                        </ul>-->
                     </div>
                     <!-- /.col-md-9 -->
 
