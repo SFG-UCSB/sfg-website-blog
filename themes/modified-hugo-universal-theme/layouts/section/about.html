@@ -50,18 +50,17 @@
                                 <div class="col-md-9">
                                     <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
                                     <p class="author-category">
-                                    Contact: 
                                       {{ if isset .Params "site"}}
                                       <a class = "contact-sep" href="{{ .Params.site }}" target="_blank" style="opacity: 1;">Website</a>
                                       {{ end }}
                                       {{ if isset .Params "github"}}
-                                      <a class = "contact-sep" href="{{ .Params.github }}" target="_blank" style="opacity: 1;">GitHub</i></a>
+                                      <a class = "contact-sep" href="{{ .Params.github }}" target="_blank" style="opacity: 1;">GitHub</a>
                                       {{ end }}
                                       {{ if isset .Params "twitter"}}
-                                      <a class = "contact-sep" href="{{ .Params.twitter }}" target="_blank" style="opacity: 1;">Twitter</i></a>
+                                      <a class = "contact-sep" href="{{ .Params.twitter }}" target="_blank" style="opacity: 1;">Twitter</a>
                                       {{ end }}
                                       {{ if isset .Params "instagram"}}
-                                      <a class = "contact-sep" href="{{ .Params.instagram }}" target="_blank" style="opacity: 1;">Instagram</i></a>
+                                      <a class = "contact-sep" href="{{ .Params.instagram }}" target="_blank" style="opacity: 1;">Instagram</a>
                                       {{ end }}
                                       {{ if isset .Params "google_scholar"}}
                                       <a class = "contact-sep" href="{{ .Params.google_scholar }}" target="_blank" style="opacity: 1;">Google Scholar</a>
@@ -70,6 +69,7 @@
                                       <a class = "contact-sep" href="{{ .Params.email }}" target="_blank" style="opacity: 1;">Email</a>
                                       {{ end }}
                                     </p>
+                                    <br>
                                     <p class="intro">{{ .Summary }}</p>
 
                                 </div>
