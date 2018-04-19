@@ -29,12 +29,6 @@ paginate = 10 # Define the number of posts per page
     weight = 2
 
 [[menu.main]]
-    name = "Open Science"
-    identifier = "publications"
-    url  = "/publications/"
-    weight = 3
-    
-[[menu.main]]
     name = "About Us"
     identifier = "about"
     url  = "/about/"
