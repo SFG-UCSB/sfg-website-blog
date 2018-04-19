@@ -3,7 +3,7 @@
 ### Last updated on March 26, 2018
 
 ### General settings -------------------------------------
-baseurl = "" # Where we're hosting it
+baseurl = "/" # Where we're hosting it
 title = "Sustainable Fisheries Group"
 theme = "modified-hugo-universal-theme"
 themesDir = "./themes"
