@@ -93,7 +93,7 @@ paginate = 10 # Define the number of posts per page
 # About section parameters
 
   about_name = "The Sustainable Fisheries Group (SFG)"
-  aboutPicture = "sfg.png"
+  about_logo = "sfg.png"
   about_description = "SFG was founded in 2006 by marine ecologist Steve Gaines and economist Chris Costello and is a collaboration between the Marine Science Institute and the Bren School of Environmental Science and Management. SFG develops innovative science and applies it to real-world challenges to improve the sustainability of marine resources and coastal communities. SFG utilizes diverse market approaches, bioeconomic modeling, and spatial analysis to improve the ecological and economic performance of fisheries and other ocean uses."
   aboutSite = "http://sfg.msi.ucsb.edu/"
   aboutGithub = "https://github.com/SFG-UCSB"

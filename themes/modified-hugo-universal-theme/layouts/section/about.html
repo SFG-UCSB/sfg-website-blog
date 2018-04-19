@@ -32,27 +32,49 @@
                 <div class="row">
                     <div class="col-md-12" id="blog-listing-medium">
                       <h2>Our Organization</h2>
-  
+                      {{ $paginator := .Paginate .Data.Pages  }}
+                      {{ range (where $paginator.Pages "Params.category" "place").ByTitle }}
                         <section class="post">
                             <div class="row">
                                 <div class="col-md-3">
                                   <div class="image">
-                                          <img src="{{ .Site.BaseURL}}img/people/sfg.png" class="img-responsive" alt="">
+                                      <a href="{{ .Permalink }}">
+                                          {{ if .Params.photo }}
+                                          <img src="{{ .Site.BaseURL}}{{ .Params.photo }}" class="img-responsive" alt="">
+                                          {{ else }}
+                                          <img src="{{ .Site.BaseURL}}img/placeholder.png" class="img-responsive" alt="">
+                                          {{ end }}
+                                      </a>
                                   </div>
                                 </div>
                                 <div class="col-md-9">
-                                  {{ if isset .Site.Params "about_name" }}
-                                    <h2>{{ .Site.Params.about_name | safeHTML }}</h2>
-                                  {{ end }}
-                                  {{ if isset .Site.Params "about_description" }}
-                                    <p class="intro">{{ .Site.Params.about_description | safeHTML }}</p>
-                                  {{ end }}
-                            
+                                    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                                    
+                                    <p class="intro">{{ .Summary }}</p>
+                                    <p class="pull-right">
+                                      {{ if isset .Params "site"}}
+                                      <a href="{{ .Params.site }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-external-link'></i></a>
+                                      {{ end }}
+                                      {{ if isset .Params "github"}}
+                                      <a href="{{ .Params.github }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-github'></i></a>
+                                      {{ end }}
+                                      {{ if isset .Params "twitter"}}
+                                      <a href="{{ .Params.twitter }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-twitter'></i></a>
+                                      {{ end }}
+                                      {{ if isset .Params "instagram"}}
+                                      <a href="{{ .Params.instagram }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-instagram'></i></a>
+                                      {{ end }}
+                                      {{ if isset .Params "email"}}
+                                      <a href="{{ .Params.email }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-envelope'></i></a>
+                                      {{ end }}
+                                    </p>
+
                                 </div>
                             </div>
                         </section>
+                        {{ end }}
+                      </div>
                     </div>
-                </div>
                 <br>
                       
                 <!-- *** Contributing Authors *** -->
