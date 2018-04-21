@@ -13,7 +13,7 @@
 
         </header>
 
-        <!-- *** Title *** -->
+        <!-- ### TITLE-PICTURE BAR ### ________________________________________________________ -->
         <div id="heading-breadcrumbs">
           <div class="container">
               <div class="row">
@@ -22,14 +22,14 @@
                 </div>
               </div>
           </div>
-        </div>
+        </div> <!-- TITLE-PICTURE BAR END -->
 
-        <!-- *** Content *** -->
+        <!-- ### CONTENT ### ________________________________________________________ -->
         <div id="content">
             <div class="container">
                 <div class="row">
-                    <!-- *** LEFT COLUMN *** -->
 
+                    <!-- ### LEFT COLUMN ### ________________________________________________________ -->
                     <div class="col-md-9" id="blog-listing-medium">
 
                         {{ $paginator := (.Paginate .Data.Pages) }}
@@ -95,39 +95,33 @@
                             <li class="next disabled"><a href="#">{{ i18n "older" }} &rarr;</a></li>
                             {{ end }}
                         </ul>
-                    </div>
-                    <!-- /.col-md-9 -->
+                    </div> <!-- LEFT COLUMN END -->
 
-                    <!-- *** LEFT COLUMN END *** -->
-
-                    <!-- *** RIGHT COLUMN ***
-       _________________________________________________________ -->
-
-                    <div class="col-md-3">
-
-                        <!-- *** MENUS AND WIDGETS *** -->
+                    
+                    <!-- ### BUFFER COLUMN ### ________________________________________________________ -->
+                    <div class="col-md-1">
+                      
+                    </div> <!-- BUFFER COLUMN END -->
+                    
+                    
+                    <!-- ### RIGHT COLUMN ### _________________________________________________________ -->
+                    <div class="col-md-2">
 
                         {{ partial "sidebar.html" . }}
 
-                        <!-- *** MENUS AND FILTERS END *** -->
+                    </div> <!-- RIGHT COLUMN END -->
+                    
 
-                    </div>
-                    <!-- /.col-md-3 -->
-
-                    <!-- *** RIGHT COLUMN END *** -->
-
-                </div>
-                <!-- /.row -->
-            </div>
-            <!-- /.container -->
-        </div>
-        <!-- /#content -->
-
+                </div> <!-- /.row -->
+                
+            </div> <!-- /.container -->
+            
+        </div> <!-- CONTENT END -->
+        
         {{ partial "footer.html" . }}
 
-    </div>
-    <!-- /#all -->
-
+    </div> <!-- ALL END -->
+    
     {{ partial "scripts.html" . }}
 
   </body>
