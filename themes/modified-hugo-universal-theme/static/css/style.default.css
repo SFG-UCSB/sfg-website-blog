@@ -48,13 +48,14 @@
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-/* general styles */
+/* Transition time for hyperlinks and buttons */
 a,
 button {
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
+/* Add left/right margin for hyperlinks and buttons with class="fa" */
 a i.fa,
 button i.fa {
   margin: 0 5px;
@@ -68,6 +69,8 @@ button i.fa {
 .accent {
   color: #38a7bb;
 }
+
+/* Uppercase text */
 .text-uppercase {
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -790,11 +793,13 @@ fieldset[disabled] .btn-template-primary.active {
     right: 10%;
   }
 }
+
 #intro .container,
 #intro .row {
   height: 100%;
   position: relative;
 }
+
 .jumbotron {
   padding: 30px;
   margin-bottom: 0;
@@ -815,34 +820,41 @@ fieldset[disabled] .btn-template-primary.active {
   opacity: 0.6;
   filter: alpha(opacity=60);
 }
+
+/* Set text color for all "jumbotron" text types */
 .jumbotron h1,
 .jumbotron h2,
 .jumbotron h3,
 .jumbotron p,
 .jumbotron ul {
-  color: #fff;
+  color: #ffffff;
 }
+/* Set text to uppercase for all "jumbotron" headers */
 .jumbotron h1,
 .jumbotron h2,
 .jumbotron h3 {
-  color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
+/* Add margin after paragraphs in "jumbotron" objects */
 .jumbotron p {
   margin-bottom: 20px;
   font-size: 21px;
   font-weight: 400;
 }
+/* Increase weight of paragraphs in "jumbotron" objects with class="text-uppercase" */
 .jumbotron p.text-uppercase {
   font-weight: 700;
 }
+/* Add top border to hr nested directly inside a "jumbotron" object */
 .jumbotron > hr {
   border-top-color: #d5d5d5;
 }
+/* Set rounding of corners for "jumbotron" or "container" objects */
 .container .jumbotron {
   border-radius: 0;
 }
+/* Place "container" objects within a "jumbotron" object in front */
 .jumbotron .container {
   max-width: 100%;
   z-index: 2;
@@ -1968,13 +1980,7 @@ fieldset[disabled] .btn-template-primary.active {
   font-size: 13px;
   line-height: 15px;
 }
-#map {
-  height: 300px;
-}
-#map.with-border {
-  border-top: solid 1px #38a7bb;
-  border-bottom: solid 1px #38a7bb;
-}
+
 #blog-listing-big .post,
 #blog-homepage .post {
   margin-bottom: 60px;
@@ -2511,102 +2517,8 @@ fieldset[disabled] .btn-template-primary.active {
 #get-it p {
   margin: 0 0 20px;
 }
-#footer {
-  background: #555555;
-  padding: 50px 0;
-  color: #999999;
-}
-#footer h1,
-#footer h2,
-#footer h3,
-#footer h4,
-#footer h5,
-#footer h6 {
-  color: #eeeeee;
-}
-#footer h4 {
-  font-size: 14px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-#footer ul {
-  padding-left: 0;
-  list-style: none;
-}
-#footer ul a {
-  color: #999999;
-}
-#footer ul a:hover {
-  color: #38a7bb;
-  text-decoration: none;
-}
-#footer .photostream div {
-  float: left;
-  display: block;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 33%;
-  padding: 7.5px;
-  overflow: hidden;
-}
-#footer .photostream div a {
-  border: solid 1 px #eeeeee;
-}
-#footer .photostream div img {
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-}
-#footer .photostream div:hover img {
-  -webkit-transform: scale(1.1, 1.1);
-  -ms-transform: scale(1.1, 1.1);
-  -o-transform: scale(1.1, 1.1);
-  transform: scale(1.1, 1.1);
-}
-#footer .blog-entries .item {
-  clear: both;
-  padding: 5px 0;
-  margin-bottom: 10px;
-  border-bottom: solid 1px #555555;
-}
-#footer .blog-entries .item .image {
-  float: left;
-  width: 15%;
-  margin-right: 10px;
-}
-#footer .blog-entries .item .name {
-  width: 75%;
-  margin-left: 10px;
-  display: table-cell;
-  vertical-align: middle;
-}
-#footer .blog-entries .item .name h5 {
-  margin: 0;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-size: 12px;
-}
-#footer .blog-entries .item .name h5 a {
-  color: #eeeeee;
-}
-#footer .blog-entries .item .text {
-  width: 100%;
-  clear: both;
-}
-#footer .blog-entries .item:last-child {
-  border-bottom: none;
-  margin-bottom: 0;
-}
-#footer .social a {
-  color: #555555;
-  font-size: 25px;
-  margin: 0 10px 0 0;
-}
-#footer .social a:hover {
-  color: #38a7bb;
-}
+
+/* Styles for footer */
 #copyright {
   background: #333;
   color: #ccc;

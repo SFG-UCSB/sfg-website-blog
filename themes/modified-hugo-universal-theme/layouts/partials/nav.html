@@ -2,14 +2,20 @@
 
 <div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
 
-    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
-      
-        <!-- Dark bar on top of navigation panel with optional text -->
-        <div class="container">
-          
+    <div id="navbar" class="navbar navbar-default yamm" role="navigation">
         
+        <!-- Dark bar with optional text -->
+        <div id="top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        {{ .Site.Params.topbar_text | safeHTML }}
+                    </div>
+                    
+                </div>
+            </div>
         </div>
-          
+
         <!-- White bar with logo and main menu -->
         <div class="container">
           
