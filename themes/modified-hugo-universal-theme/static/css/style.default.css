@@ -239,58 +239,29 @@ ul.list-style-none {
   }
 }
 
-/* Dark bar at the top of the navbar with optional text set in the config file (params.topbar_text) */ 
-/* Set background color for topbar. Should perhaps lump this in with the footer so they match */ 
-#top {
+/* Topbar and footer */
+/* Both have optional text set in the config file (params.topbar_text and params.copyright) */ 
+
+/* Set background color and padding for topbar and footer */ 
+#top,
+#copyright {
   background: #555555;
   color: #eeeeee;
   padding: 20px 0;
+  font-size: 12px;
 }
-/* Set text size for topbar */ 
-#top p {
+/* Set text margin for topbar and footer */ 
+#top p,
+#copyright p {
   margin: 0;
-  font-size: 12px;
 }
-#top .social {
-  float: right;
-  text-align: right;
-}
-#top .social a {
-  color: #999999;
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  border-radius: 12px;
-  line-height: 20px;
-  font-size: 12px;
-  text-align: center;
-  vertical-align: bottom;
-}
-#top .social a:hover {
-  color: #fff;
-}
-#top .social a:hover.facebook {
-  background-color: #4460ae;
-}
-#top .social a:hover.gplus {
-  background-color: #c21f25;
-}
-#top .social a:hover.twitter {
-  background-color: #3cf;
-}
-#top .social a:hover.instagram {
-  background-color: #cd4378;
-}
-#top .social a:hover.email {
-  background-color: #4a7f45;
-}
-#top.light {
-  background: #fff;
-  color: #999999;
-  border-bottom: solid 1px #eeeeee;
-}
-#top.light .login a {
-  color: #555555;
+
+/* Center text in footer with small-screen size */ 
+@media (max-width: 991px) {
+#copyright p {
+    float: none !important;
+    text-align: center;
+  }
 }
 
 /* Navbar with optional logo/website name and main menu dropdowns */ 
@@ -2507,24 +2478,6 @@ fieldset[disabled] .btn-template-primary.active {
   margin: 0 0 20px;
 }
 
-/* Styles for footer */
-#copyright {
-  background: #333;
-  color: #ccc;
-  padding: 50px 0;
-  font-size: 12px;
-  line-height: 28px;
-}
-#copyright p {
-  margin: 0;
-}
-@media (max-width: 991px) {
-  #copyright p {
-    float: none !important;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-}
 [data-animate] {
   opacity: 0;
   filter: alpha(opacity=0);
