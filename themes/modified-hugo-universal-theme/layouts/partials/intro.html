@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h1 class="text-uppercase">{{ .Site.Params.intro.title }}</h1>
-                <p class="lead">{{ .Site.Params.intro.subtitle }}</p>
+                <p class="lead">{{ .Site.Params.intro.subtitle | markdownify }</p>
             </div>
 
         </div>
