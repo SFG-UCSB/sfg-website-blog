@@ -101,13 +101,15 @@ paginate = 10 # Define the number of posts per page
 # All carousel items are defined in their own files stored in '/data/carousel/'
 [params.carousel]
     enable = false
-    
+
+# Introduction - Replacement for Carousel... Just wanted one 
+# All posts are defined in their own files stored in '/content/blog/'
 [params.intro]
     enable = true
     title = "Welcome to our blog!"
     subtitle = """<p>The Sustainable Fisheries Group (SFG) is an interdisciplinary group of researchers at the University of California, Santa Barbara 
-    who aim to address critical ocean problems by bridging gaps among science, policy, and management.</p>
-    <p>Here you will find posts on the latest happenings at SFG, as well as tutorials on interesting code-related things we've come across in our work. Principles like transparency, 
+    who aim to address critical ocean problems by bridging gaps among science, policy, and management.
+    <br><br>Here you will find posts on the latest happenings at SFG, as well as tutorials on interesting code-related things we've come across in our work. Principles like transparency, 
     repeatability, open exchange, and collaboration are fundamental to our work, so most of these posts relate to open source software. 
       </p>
       """
@@ -115,8 +117,8 @@ paginate = 10 # Define the number of posts per page
 # All posts are defined in their own files stored in '/content/blog/'
 [params.recent_posts]
     enable = true
-    title = "Recent posts from our blog"
-    subtitle = "We like to write about code, random interests, etc..."
+    title = "Recent Posts"
+    subtitle = ""
     
 # See More - Send people to the main SFG web page
 [params.see_more]
