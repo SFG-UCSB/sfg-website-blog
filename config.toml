@@ -62,7 +62,7 @@ paginate = 10 # Define the number of posts per page
     style = "default"
     
     # Topbar
-    topbar_text = ""<p class="hidden-sm hidden-xs">Visit our <a href="http://sfg.msi.ucsb.edu/">main website</a> or find us on social media! </p>
+    topbar_text = """<p class="hidden-sm hidden-xs">Visit our <a href="http://sfg.msi.ucsb.edu/">main website</a> or find us on social media! </p>
       <p class="hidden-md hidden-lg"></p>"""
     
     # Footer
