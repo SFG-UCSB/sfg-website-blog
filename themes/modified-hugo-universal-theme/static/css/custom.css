@@ -23,6 +23,8 @@
     content: " & "
 }
 
+/* Little helper class that puts an "|" between multiple contact entries */
 .contact-sep + .contact-sep:before {
     content: " | "
 }
+

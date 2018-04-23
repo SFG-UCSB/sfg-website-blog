@@ -74,7 +74,7 @@
                                     </div>
 
                                     <p class="intro">{{ .Summary }}</p>
-                                    <p class="read-more"><a href="{{ .Permalink }}" class="btn btn-template-main">{{ i18n "continueReading" }}</a></p>
+                                    <p class="read-more"><a href="{{ .Permalink }}" class="btn btn-template-main">More</a></p>
                               </div>
                             </div>
                         </section>
@@ -104,30 +104,33 @@
                                 </div>
                                 <div class="col-md-9">
                                     <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-                                    
-                                    <p class="intro">{{ .Summary }}</p>
-                                    <p class="pull-right">
+                                    <div class="clearfix">
+
+                                      <p class="author-category">
                                       {{ if isset .Params "site"}}
-                                      <a href="{{ .Params.site }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-external-link'></i></a>
+                                      <a class = contact-sep href="{{ .Params.site }}" target="_blank" style="opacity: 1;">Website</a>
                                       {{ end }}
                                       {{ if isset .Params "github"}}
-                                      <a href="{{ .Params.github }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-github'></i></a>
+                                      <a class = contact-sep href="{{ .Params.github }}" target="_blank" style="opacity: 1;">GitHub</a> 
                                       {{ end }}
                                       {{ if isset .Params "twitter"}}
-                                      <a href="{{ .Params.twitter }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-twitter'></i></a>
+                                      <a class = contact-sep href="{{ .Params.twitter }}" target="_blank" style="opacity: 1;">Twitter</a>
                                       {{ end }}
                                       {{ if isset .Params "instagram"}}
-                                      <a href="{{ .Params.instagram }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-instagram'></i></a>
-                                      {{ end }}
-                                      {{ if isset .Params "email"}}
-                                      <a href="{{ .Params.email }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-envelope'></i></a>
+                                      <a class = contact-sep href="{{ .Params.instagram }}" target="_blank" style="opacity: 1;">Instagram</a>
                                       {{ end }}
                                       {{ if isset .Params "google_scholar"}}
-                                      <a href="{{ .Params.google_scholar }}" target="_blank" style="opacity: 1;"><i class='fa fa-3x fa-external-link'></i></a>
+                                      <a class = contact-sep href="{{ .Params.google_scholar }}" target="_blank" style="opacity: 1;">Google Scholar</a>
                                       {{ end }}
-                                    </p>
+                                      {{ if isset .Params "email"}}
+                                      <a class = contact-sep href="{{ .Params.email }}" target="_blank" style="opacity: 1;">Email</a>
+                                      {{ end }}
+                                      </p>
+                                    </div>
 
-                                </div>
+                                    <p class="intro">{{ .Summary }}</p>
+                                    <p class="read-more"><a href="{{ .Permalink }}" class="btn btn-template-main">More</a></p>
+                              </div>
                             </div>
                         </section>
                         {{ end }}
