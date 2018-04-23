@@ -264,7 +264,7 @@ ul.list-style-none {
 
 /* Center text in footer with small-screen size */ 
 @media (max-width: 991px) {
-#copyright {
+#copyright p {
     float: none !important;
     text-align: center;
   }
