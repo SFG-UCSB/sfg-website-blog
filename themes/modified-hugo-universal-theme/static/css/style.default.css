@@ -733,6 +733,8 @@ fieldset[disabled] .btn-template-primary.active {
   color: #38a7bb;
   background-color: #ffffff;
 }
+
+/* id = "intro" find out where this lives */
 #intro {
   background: url('../img/home.jpg') no-repeat center top;
   -webkit-background-size: cover;
@@ -744,6 +746,7 @@ fieldset[disabled] .btn-template-primary.active {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   height: 100%;
 }
+/* id = "intro", set h1 sizes for different screen widths */
 #intro .item h1 {
   text-transform: uppercase;
   font-size: 50px;
@@ -761,6 +764,7 @@ fieldset[disabled] .btn-template-primary.active {
     font-size: 25px;
   }
 }
+/* id = "intro", set h3 sizes for different screen widths */
 #intro .item h3 {
   color: #fff;
   margin-bottom: 40px;
@@ -771,6 +775,7 @@ fieldset[disabled] .btn-template-primary.active {
     margin-bottom: 20px;
   }
 }
+/* id = "intro", set font size for class = "btn" for different screen widths */
 #intro .item .btn {
   text-transform: none;
 }

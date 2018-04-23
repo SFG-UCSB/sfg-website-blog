@@ -53,22 +53,22 @@
 
                                       <p class="author-category">
                                       {{ if isset .Params "site"}}
-                                      <a href="{{ .Params.site }}" target="_blank" style="opacity: 1;">Website</a> |
+                                      <a class = "contact-sep" href="{{ .Params.site }}" target="_blank" style="opacity: 1;">Website</a> |
                                       {{ end }}
                                       {{ if isset .Params "github"}}
-                                      <a href="{{ .Params.github }}" target="_blank" style="opacity: 1;">GitHub</a> | 
+                                      <a class = "contact-sep" href="{{ .Params.github }}" target="_blank" style="opacity: 1;">GitHub</a> | 
                                       {{ end }}
                                       {{ if isset .Params "twitter"}}
-                                      <a href="{{ .Params.twitter }}" target="_blank" style="opacity: 1;">Twitter</a> |
+                                      <a class = "contact-sep" href="{{ .Params.twitter }}" target="_blank" style="opacity: 1;">Twitter</a> |
                                       {{ end }}
                                       {{ if isset .Params "instagram"}}
-                                      <a href="{{ .Params.instagram }}" target="_blank" style="opacity: 1;">Instagram</a> |
+                                      <a class = "contact-sep" href="{{ .Params.instagram }}" target="_blank" style="opacity: 1;">Instagram</a> |
                                       {{ end }}
                                       {{ if isset .Params "google_scholar"}}
-                                      <a href="{{ .Params.google_scholar }}" target="_blank" style="opacity: 1;">Google Scholar</a> |
+                                      <a class = "contact-sep" href="{{ .Params.google_scholar }}" target="_blank" style="opacity: 1;">Google Scholar</a> |
                                       {{ end }}
                                       {{ if isset .Params "email"}}
-                                      <a href="{{ .Params.email }}" target="_blank" style="opacity: 1;">Email</a>
+                                      <a class = "contact-sep" href="{{ .Params.email }}" target="_blank" style="opacity: 1;">Email</a>
                                       {{ end }}
                                       </p>
                                     </div>
