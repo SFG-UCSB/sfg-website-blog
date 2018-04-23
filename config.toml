@@ -44,13 +44,13 @@ paginate = 10 # Define the number of posts per page
 [[menu.topbar]]
     weight = 2
     name = "Twitter"
-    url = "https://twitter.com/sfgucsb?lang=en"
+    url = ""
     pre = "<i class='fa fa-2x fa-twitter'></i>"
 
 [[menu.topbar]]
     weight = 3
     name = "Instagram"
-    url = "https://www.instagram.com/sfg_ucsb/"
+    url = ""
     pre = "<i class='fa fa-2x fa-instagram'></i>"
 
 ### Parameters -----------------------------------------
@@ -62,8 +62,9 @@ paginate = 10 # Define the number of posts per page
     style = "default"
     
     # Topbar
-    topbar_text = """<p class="hidden-sm hidden-xs">Visit our <a href="http://sfg.msi.ucsb.edu/">main website</a> or find us on social media! </p>
-      <p class="hidden-md hidden-lg"></p>"""
+    topbar_text = """<p class="hidden-sm hidden-xs">Visit our <a href="http://sfg.msi.ucsb.edu/">main website</a> or find us on 
+    <a href="https://github.com/SFG-UCSB">Github</a>, <a href="https://twitter.com/sfgucsb?lang=en">Twitter</a>, and <a href="https://www.instagram.com/sfg_ucsb/">Instagram</a>! </p>
+    <p class="hidden-md hidden-lg"></p>"""
     
     # Footer
     copyright = "Copyright (c) 2018, Sustainable Fisheries Group; all rights reserved."
