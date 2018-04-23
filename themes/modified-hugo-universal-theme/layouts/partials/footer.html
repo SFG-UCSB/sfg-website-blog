@@ -3,20 +3,17 @@
 
 <div id="copyright">
     <div class="container">
-        <div class="col-md-12">
+        <div class="col-md-12 text-right">
           <div class="row">
-            
-            <div class="col-md-5">
               {{ if isset .Site.Params "copyright" }}
-              <p class="pull-right">{{ .Site.Params.copyright | safeHTML }}</p>
+              <p>{{ .Site.Params.copyright | safeHTML }}</p>
               {{ end }}
-              <p class="pull-right">
+              <p>
                 {{ i18n "templateBy" }} <a href="http://bootstrapious.com/free-templates">Bootstrapious</a>.
                 {{ i18n "portedBy" }} <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>
+                {{ i18n "maintainedBy" }} <a href="https://github.com/kmillage">Kat Millage</a>
               </p>
             </div>
-            
-          </div>
         </div>
     </div>
 </div>

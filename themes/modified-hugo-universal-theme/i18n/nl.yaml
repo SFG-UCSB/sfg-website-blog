@@ -6,6 +6,9 @@
 
 - id: portedBy
   translation: "Omgezet naar Hugo door"
+  
+- id: maintainedBy
+  translation: "Broken (and sometimes maintained) by"
 
 - id: contactGoTo
   translation: "Ga naar de contactpagina"

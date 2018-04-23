@@ -6,6 +6,9 @@
 
 - id: portedBy
   translation: "Портирован на Hugo"
+  
+- id: maintainedBy
+  translation: "Broken (and sometimes maintained) by"
 
 - id: contactGoTo
   translation: "Страница контактов"
