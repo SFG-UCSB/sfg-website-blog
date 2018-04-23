@@ -8,7 +8,7 @@
   translation: "Omgezet naar Hugo door"
   
 - id: maintainedBy
-  translation: "Broken (and sometimes maintained) by"
+  translation: "Broken by"
 
 - id: contactGoTo
   translation: "Ga naar de contactpagina"

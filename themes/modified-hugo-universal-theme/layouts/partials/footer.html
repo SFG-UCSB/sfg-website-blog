@@ -6,12 +6,12 @@
         <div class="col-md-12 text-right">
           <div class="row">
               {{ if isset .Site.Params "copyright" }}
-              <p>{{ .Site.Params.copyright | safeHTML }}</p>
+              <p>{{ .Site.Params.copyright | safeHTML }}
               {{ end }}
-              <p>
-                {{ i18n "templateBy" }} <a href="http://bootstrapious.com/free-templates">Bootstrapious</a>.
-                {{ i18n "portedBy" }} <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>
-                {{ i18n "maintainedBy" }} <a href="https://github.com/kmillage">Kat Millage</a>
+              <br>
+              {{ i18n "templateBy" }} <a href="http://bootstrapious.com/free-templates">Bootstrapious</a>.
+              {{ i18n "portedBy" }} <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>.
+              {{ i18n "maintainedBy" }} <a href="https://github.com/kmillage">Kat Millage</a>.
               </p>
             </div>
         </div>

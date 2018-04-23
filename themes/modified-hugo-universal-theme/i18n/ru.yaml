@@ -8,7 +8,7 @@
   translation: "Портирован на Hugo"
   
 - id: maintainedBy
-  translation: "Broken (and sometimes maintained) by"
+  translation: "Broken by"
 
 - id: contactGoTo
   translation: "Страница контактов"

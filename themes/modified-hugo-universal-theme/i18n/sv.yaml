@@ -8,7 +8,7 @@
   translation: "Portad till Hugo av"
   
 - id: maintainedBy
-  translation: "Broken (and sometimes maintained) by"
+  translation: "Broken by"
 
 - id: contactGoTo
   translation: "Gå till kontaktsidan"

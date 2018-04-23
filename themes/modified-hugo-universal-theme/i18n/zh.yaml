@@ -8,7 +8,7 @@
   translation: "移植到 Hugo 来自"
   
 - id: maintainedBy
-  translation: "Broken (and sometimes maintained) by"
+  translation: "Broken by"
 
 - id: contactGoTo
   translation: "跳到联系页面"

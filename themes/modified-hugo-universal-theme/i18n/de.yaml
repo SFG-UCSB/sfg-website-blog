@@ -8,7 +8,7 @@
   translation: "Portiert nach Hugo durch"
   
 - id: maintainedBy
-  translation: "Broken (and sometimes maintained) by"
+  translation: "Broken by"
 
 - id: contactGoTo
   translation: "Zur Kontakt Seite"
