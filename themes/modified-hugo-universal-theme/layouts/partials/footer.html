@@ -6,17 +6,6 @@
         <div class="col-md-12">
           <div class="row">
             
-            <div class="col-md-7">
-            {{ if isset .Site.Params "footer_text" }}
-            <p class="pull-left">{{ .Site.Params.footer_text | safeHTML }}</p>
-            {{ end }}
-            <p class="pull-left">
-              {{ range .Site.Menus.topbar.ByWeight }}
-              <a href="{{ .URL }}" target="_blank" style="opacity: 1;">{{ .Pre }}</a>
-              {{ end }}
-            </p>
-            </div>
-            
             <div class="col-md-5">
               {{ if isset .Site.Params "copyright" }}
               <p class="pull-right">{{ .Site.Params.copyright | safeHTML }}</p>

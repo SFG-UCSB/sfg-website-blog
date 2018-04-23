@@ -4,12 +4,20 @@
 
     <div id="navbar" class="navbar navbar-default yamm" role="navigation">
         
-        <!-- Dark bar with optional text -->
+        <!-- Dark topbar with optional text and social media icons -->
         <div id="top">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12">
-                        {{ .Site.Params.topbar_text | safeHTML }}
+                  
+                    <div class="col-xs-5">
+                          {{ .Site.Params.topbar.text | safeHTML }}
+                    </div>
+                    <div class="col-xs-7">
+                        <div class="social">
+                            {{ range .Site.Menus.topbar.ByWeight }}
+                            <a href="{{ .URL }}" target="_blank" style="opacity: 1;">{{ .Pre }}</a>
+                            {{ end }}
+                        </div>
                     </div>
                     
                 </div>

@@ -60,15 +60,15 @@ paginate = 10 # Define the number of posts per page
     date_format = "January 2, 2006" # Format dates with Go's time formatting
     googleMapsApiKey = "" # Google Maps API key (if not set will default to not passing a key.)
     style = "default"
-
+    
+    # Topbar
+    topbar_text = ""<p class="hidden-sm hidden-xs">Visit our <a href="http://sfg.msi.ucsb.edu/">main website</a> or find us on social media! </p>
+      <p class="hidden-md hidden-lg"></p>"""
+    
     # Footer
     copyright = "Copyright (c) 2018, Sustainable Fisheries Group; all rights reserved."
-    footer_text = """<p class="hidden-sm hidden-xs">Visit our main website at <a href="http://sfg.msi.ucsb.edu/">http://sfg.msi.ucsb.edu/</a> or you can find us on Github, Twitter, and Instagram! </p>
-      <p class="hidden-md hidden-lg"></p>"""
       
-    # Topbar
-    topbar_text = ""
-    
+
 ### Contact page ###      
 # Since this template is static, the contact form uses www.formspree.io as a proxy. The form makes a POST request to their servers to send the actual email. Visitors can send up to a 1000 emails each month for free.
   

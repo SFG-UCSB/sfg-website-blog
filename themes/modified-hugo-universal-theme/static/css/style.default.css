@@ -238,11 +238,15 @@ ul.list-style-none {
     box-shadow: 0 0 5px #cccccc;
   }
 }
+
+/* Dark bar at the top of the navbar with optional text set in the config file (params.topbar_text) */ 
+/* Set background color for topbar. Should perhaps lump this in with the footer so they match */ 
 #top {
   background: #555555;
   color: #eeeeee;
-  padding: 10px 0;
+  padding: 20px 0;
 }
+/* Set text size for topbar */ 
 #top p {
   margin: 0;
   font-size: 12px;
@@ -280,23 +284,6 @@ ul.list-style-none {
 #top .social a:hover.email {
   background-color: #4a7f45;
 }
-#top .login {
-  float: right;
-}
-#top .login a {
-  font-size: 12px;
-  color: #eeeeee;
-  margin-right: 15px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 0.10em;
-}
-@media (max-width: 767px) {
-  #top .login {
-    float: left;
-  }
-}
 #top.light {
   background: #fff;
   color: #999999;
@@ -305,6 +292,8 @@ ul.list-style-none {
 #top.light .login a {
   color: #555555;
 }
+
+/* Navbar with optional logo/website name and main menu dropdowns */ 
 .navbar {
   border: none;
 }
