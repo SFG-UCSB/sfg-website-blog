@@ -27,6 +27,12 @@ paginate = 10 # Define the number of posts per page
     identifier = "blog"
     url  = "/blog/"
     weight = 2
+    
+[[menu.main]]
+    name = "Research"
+    identifier = "research"
+    url  = "/research/"
+    weight = 3
 
 [[menu.main]]
     name = "About Us"
